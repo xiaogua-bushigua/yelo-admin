@@ -1,4 +1,4 @@
-import cl from './infopage.module.scss';
+import cl from './infoPage.module.scss';
 import HistoryInfo from './HistoryInfo';
 import PersonalInfo from './PersonalInfo';
 
