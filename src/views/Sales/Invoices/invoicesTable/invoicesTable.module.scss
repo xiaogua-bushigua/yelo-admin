@@ -54,17 +54,6 @@
 		border-radius: 10px;
 		cursor: pointer;
 	}
-  // 不起作用
-	.ant-table-row-expand-icon-cell {
-		button {
-			:global(&::after) {
-				color: 'red' !important;
-			}
-			:global(&::before) {
-				color: 'red' !important;
-			}
-		}
-	}
 
 	.cardWrap {
 		padding: 10px 18px;

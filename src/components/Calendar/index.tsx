@@ -4,7 +4,7 @@ import { Button, Calendar } from 'antd';
 import { ScheduleOutlined } from '@ant-design/icons';
 import type { Dayjs } from 'dayjs';
 import type { CalendarMode } from 'antd/es/calendar/generateCalendar';
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 type propsType = {
 	title: string;
