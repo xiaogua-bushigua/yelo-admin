@@ -141,8 +141,8 @@ export const SalesSlice = createSlice({
 			state.selectInvoiceRowKeys = action.payload;
 		},
 		setNowMenu: (state, action: PayloadAction<string>) => {
-      state.nowMenu = (localStorage.getItem('nowMenu') ? localStorage.getItem('nowMenu') : action.payload)!
-			localStorage.setItem('nowMenu', action.payload)
+			state.nowMenu = (localStorage.getItem('nowMenu') ? localStorage.getItem('nowMenu') : action.payload)!;
+			localStorage.setItem('nowMenu', action.payload);
 		},
 		setOrderSelectRowKeys: (state, action: PayloadAction<React.Key[]>) => {
 			state.selectOrderRowKeys = action.payload;
@@ -228,10 +228,16 @@ export const SalesSlice = createSlice({
 			state.searchItem = action.payload;
 		},
 		orderSearch: (state) => {
+			state.orderTableData = {
+				ordered: dataSourceInit,
+				delivered: dataSourceInit,
+				canceled: dataSourceInit,
+			};
+			state.orderTableData = JSON.parse(localStorage.getItem('saleOrderShowData')!).data;
 			const filterTable = (item: string) => {
-				state.orderTableData[item as keyof typeof state.orderTableData].data = [];
-				state.orderTableData[item as keyof typeof state.orderTableData].data = JSON.parse(localStorage.getItem('saleOrderShowData')!).ordered.data;
-				state.orderTableData[item as keyof typeof state.orderTableData].data = state.orderTableData.ordered.data.filter(
+				state.orderTableData[item as keyof typeof state.orderTableData].data = state.orderTableData[
+					item as keyof typeof state.orderTableData
+				].data.filter(
 					(item) => item.address.includes(state.searchItem) || item.customer.includes(state.searchItem) || item.orderCode.includes(state.searchItem)
 				);
 			};

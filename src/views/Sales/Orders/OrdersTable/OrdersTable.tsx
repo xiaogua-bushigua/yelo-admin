@@ -141,7 +141,6 @@ const OrdersTable = () => {
       if(!columnShow[col as keyof typeof columnShow]) {        
         for(let item of Columns.data) {
           if(item.title === col) {  
-            console.log(col);
             setColumns({data: Columns.data.filter(i=>i.title !== col)})
           }
         }
