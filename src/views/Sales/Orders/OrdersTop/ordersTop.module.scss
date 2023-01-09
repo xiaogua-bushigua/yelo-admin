@@ -1,0 +1,62 @@
+@import '@/assets/styles/global.scss';
+
+.ordersTopWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  .filtersWrap {
+    margin-left: 10px;
+  }
+  .btns {
+    display: flex;
+    .optionBtn {
+      height: 40px;
+      margin-right: 14px;
+      margin-top: 10px;
+      background-color: transparent;
+      border: none;
+      color: $blue;
+      font-weight: 600;
+      &:hover {
+        background-color: #e7e7f7;
+      }      
+    }
+    .columns {
+      position: relative;
+      z-index: 30;
+      .colItemsWrap {
+        position: absolute;
+        bottom: -205px;
+        left: -20px;
+        padding: 10px 0px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid $border-color;
+
+        transition: 0.3s;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: 50% 0;
+        .colItem {
+          font-size: 14px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          width: 150px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(241, 241, 241);
+          }
+        }
+      }
+      .colItemsWrapOpen {
+        transition: 0.3s;
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}

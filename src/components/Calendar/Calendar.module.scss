@@ -1,0 +1,67 @@
+@import '@/assets/styles/global.scss';
+
+.CalendarWrap {
+	width: 160px;
+	height: 50px;
+  z-index: 21;
+	display: inline-block;
+	position: relative;
+	background-color: #f2f5ff;
+	border-radius: 12px 12px 0 0;
+  border-bottom: 2px solid #686868;
+  transition: 0.3s;
+  margin: 0 0px 0 4px;
+  .title {
+    font-size: 13px;
+    color: #686868;
+    position: absolute;
+    top: 6px;
+    transition: 0.3s;
+    left: 10px;
+  }
+  .date {
+    position: absolute;
+    bottom: 6px;
+    left: 14px;
+    color:rgb(69, 69, 69);
+  }
+  .icon {
+		color: rgb(54, 54, 54) !important;
+		background-color: #f2f5ff !important;
+		border: none;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translate(0, -40%);
+  }
+  .calendar {
+    position: absolute;
+    width: 282px;
+    top: 0;
+    transform: translateY(58px);
+    box-shadow: 4px 4px 10px rgba($color: #000000, $alpha: 0.35);
+    border-radius: 8px;
+
+    transition: 0.3s;
+    opacity: 0;
+    transform: scale(0);
+    :global(.ant-picker-body) {
+      background-color: #f5f7fc;
+      border-radius: 0 0 8px 8px;
+    }
+  }
+  .calendarOn {
+    transition: 0.3s;
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(58px);
+  }
+  .titleOn {
+    color: $blue;
+    transition: 0.3s;
+  }
+}
+.CalendarWrapOn {
+  border-bottom: 2px solid $blue;
+  transition: 0.3s;
+}

@@ -1,0 +1,2438 @@
+[
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b24",
+        "date": "2018-10-09 23:36:37",
+        "customer": "李倩",
+        "customerId": "63aaab0314c7e256e8eb9b9e",
+        "address": "福建省亮县西峰毕街i座",
+        "totalDeliveryFees": 36,
+        "totalExPrices": 398,
+        "totalTaxes": 82,
+        "buyItems": [
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 165,
+                "quantity": 1,
+                "taxe": 28,
+                "totalSolo": 193
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 17,
+                "quantity": 1,
+                "taxe": 25,
+                "totalSolo": 42
+            },
+            {
+                "product": "平板",
+                "status": "ordered",
+                "unitPrice": 216,
+                "quantity": 1,
+                "taxe": 29,
+                "totalSolo": 245
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b25",
+        "date": "2014-08-18 21:56:36",
+        "customer": "李金凤",
+        "customerId": "63aaaaf114c7e256e8eb9ae8",
+        "address": "江苏省杨市西峰昆明路E座",
+        "totalDeliveryFees": 37,
+        "totalExPrices": 776,
+        "totalTaxes": 48,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "canceled",
+                "unitPrice": 388,
+                "quantity": 2,
+                "taxe": 48,
+                "totalSolo": 824
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b26",
+        "date": "2019-09-12 07:34:39",
+        "customer": "谢秀梅",
+        "customerId": "63aaaaf614c7e256e8eb9b1d",
+        "address": "四川省大冶市门头沟六盘水路K座",
+        "totalDeliveryFees": 37,
+        "totalExPrices": 1095,
+        "totalTaxes": 64,
+        "buyItems": [
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 420,
+                "quantity": 1,
+                "taxe": 5,
+                "totalSolo": 425
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 184,
+                "quantity": 3,
+                "taxe": 26,
+                "totalSolo": 578
+            },
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 41,
+                "quantity": 3,
+                "taxe": 33,
+                "totalSolo": 156
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b27",
+        "date": "2016-02-19 12:13:15",
+        "customer": "佘芳",
+        "customerId": "63aaaaf414c7e256e8eb9b08",
+        "address": "云南省佛山市崇文谢街d座",
+        "totalDeliveryFees": 15,
+        "totalExPrices": 1368,
+        "totalTaxes": 73,
+        "buyItems": [
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 359,
+                "quantity": 3,
+                "taxe": 24,
+                "totalSolo": 1101
+            },
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 291,
+                "quantity": 1,
+                "taxe": 49,
+                "totalSolo": 340
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b28",
+        "date": "2015-12-06 14:57:16",
+        "customer": "任丽娟",
+        "customerId": "63aaaaf414c7e256e8eb9b0b",
+        "address": "四川省大冶市房山永安路j座",
+        "totalDeliveryFees": 40,
+        "totalExPrices": 2502,
+        "totalTaxes": 50,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 450,
+                "quantity": 4,
+                "taxe": 28,
+                "totalSolo": 1828
+            },
+            {
+                "product": "乒乓球",
+                "status": "canceled",
+                "unitPrice": 234,
+                "quantity": 3,
+                "taxe": 22,
+                "totalSolo": 724
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b29",
+        "date": "2015-03-31 03:31:52",
+        "customer": "夏龙",
+        "customerId": "63aaaafb14c7e256e8eb9b52",
+        "address": "青海省汕尾市海陵卜路w座",
+        "totalDeliveryFees": 27,
+        "totalExPrices": 330,
+        "totalTaxes": 30,
+        "buyItems": [
+            {
+                "product": "手表",
+                "status": "delivered",
+                "unitPrice": 330,
+                "quantity": 1,
+                "taxe": 30,
+                "totalSolo": 360
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b2a",
+        "date": "2021-02-10 02:37:26",
+        "customer": "周秀荣",
+        "customerId": "63aaaaff14c7e256e8eb9b76",
+        "address": "内蒙古自治区武汉县城北韩街y座",
+        "totalDeliveryFees": 27,
+        "totalExPrices": 1334,
+        "totalTaxes": 114,
+        "buyItems": [
+            {
+                "product": "平板",
+                "status": "canceled",
+                "unitPrice": 158,
+                "quantity": 4,
+                "taxe": 37,
+                "totalSolo": 669
+            },
+            {
+                "product": "手套",
+                "status": "canceled",
+                "unitPrice": 411,
+                "quantity": 1,
+                "taxe": 18,
+                "totalSolo": 429
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 75,
+                "quantity": 3,
+                "taxe": 11,
+                "totalSolo": 236
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 66,
+                "quantity": 1,
+                "taxe": 48,
+                "totalSolo": 114
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b2b",
+        "date": "2018-11-24 02:32:01",
+        "customer": "姜婷婷",
+        "customerId": "63aaaaf514c7e256e8eb9b17",
+        "address": "上海市合山市房山北京街f座",
+        "totalDeliveryFees": 10,
+        "totalExPrices": 2205,
+        "totalTaxes": 97,
+        "buyItems": [
+            {
+                "product": "手机",
+                "status": "ordered",
+                "unitPrice": 454,
+                "quantity": 1,
+                "taxe": 22,
+                "totalSolo": 476
+            },
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 329,
+                "quantity": 4,
+                "taxe": 34,
+                "totalSolo": 1350
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 435,
+                "quantity": 1,
+                "taxe": 41,
+                "totalSolo": 476
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b2c",
+        "date": "2017-10-01 12:37:49",
+        "customer": "韩志强",
+        "customerId": "63aaaaf814c7e256e8eb9b30",
+        "address": "贵州省洁县东城张路r座",
+        "totalDeliveryFees": 33,
+        "totalExPrices": 1100,
+        "totalTaxes": 52,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 181,
+                "quantity": 2,
+                "taxe": 37,
+                "totalSolo": 399
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 369,
+                "quantity": 2,
+                "taxe": 15,
+                "totalSolo": 753
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b2d",
+        "date": "2020-10-10 19:01:34",
+        "customer": "陈宁",
+        "customerId": "63aaaaf914c7e256e8eb9b36",
+        "address": "浙江省杭州市平山张路N座",
+        "totalDeliveryFees": 10,
+        "totalExPrices": 1908,
+        "totalTaxes": 53,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "delivered",
+                "unitPrice": 251,
+                "quantity": 4,
+                "taxe": 48,
+                "totalSolo": 1052
+            },
+            {
+                "product": "显示器",
+                "status": "canceled",
+                "unitPrice": 452,
+                "quantity": 2,
+                "taxe": 5,
+                "totalSolo": 909
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b2e",
+        "date": "2022-10-09 05:34:56",
+        "customer": "彭军",
+        "customerId": "63aaaafa14c7e256e8eb9b46",
+        "address": "黑龙江省梅县闵行林街X座",
+        "totalDeliveryFees": 28,
+        "totalExPrices": 2169,
+        "totalTaxes": 46,
+        "buyItems": [
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 327,
+                "quantity": 3,
+                "taxe": 4,
+                "totalSolo": 985
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 396,
+                "quantity": 3,
+                "taxe": 42,
+                "totalSolo": 1230
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece814c7e25ba88b6b2f",
+        "date": "2013-06-05 02:03:58",
+        "customer": "蒋洁",
+        "customerId": "63aaaaf314c7e256e8eb9afb",
+        "address": "香港特别行政区红市闵行兰州路b座",
+        "totalDeliveryFees": 36,
+        "totalExPrices": 1162,
+        "totalTaxes": 34,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 143,
+                "quantity": 4,
+                "taxe": 1,
+                "totalSolo": 573
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 295,
+                "quantity": 2,
+                "taxe": 33,
+                "totalSolo": 623
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b30",
+        "date": "2018-03-04 16:46:59",
+        "customer": "薛磊",
+        "customerId": "63aaaafa14c7e256e8eb9b40",
+        "address": "内蒙古自治区丽市长寿桂街s座",
+        "totalDeliveryFees": 27,
+        "totalExPrices": 1197,
+        "totalTaxes": 10,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 399,
+                "quantity": 3,
+                "taxe": 10,
+                "totalSolo": 1207
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b31",
+        "date": "2022-12-19 18:34:51",
+        "customer": "王莹",
+        "customerId": "63aaaaf514c7e256e8eb9b14",
+        "address": "贵州省敏市高坪合肥路S座",
+        "totalDeliveryFees": 29,
+        "totalExPrices": 522,
+        "totalTaxes": 27,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 174,
+                "quantity": 3,
+                "taxe": 27,
+                "totalSolo": 549
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b32",
+        "date": "2018-05-09 15:08:36",
+        "customer": "阎淑兰",
+        "customerId": "63aaaaf814c7e256e8eb9b2e",
+        "address": "台湾省永安县金平惠州街i座",
+        "totalDeliveryFees": 23,
+        "totalExPrices": 1511,
+        "totalTaxes": 15,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 361,
+                "quantity": 3,
+                "taxe": 6,
+                "totalSolo": 1089
+            },
+            {
+                "product": "感冒药",
+                "status": "canceled",
+                "unitPrice": 214,
+                "quantity": 2,
+                "taxe": 9,
+                "totalSolo": 437
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b33",
+        "date": "2014-03-16 23:19:02",
+        "customer": "唐磊",
+        "customerId": "63aaab0014c7e256e8eb9b7b",
+        "address": "陕西省璐县新城成都街k座",
+        "totalDeliveryFees": 13,
+        "totalExPrices": 2909,
+        "totalTaxes": 101,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 338,
+                "quantity": 3,
+                "taxe": 6,
+                "totalSolo": 1020
+            },
+            {
+                "product": "显示器",
+                "status": "delivered",
+                "unitPrice": 11,
+                "quantity": 1,
+                "taxe": 42,
+                "totalSolo": 53
+            },
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 248,
+                "quantity": 1,
+                "taxe": 30,
+                "totalSolo": 278
+            },
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 409,
+                "quantity": 4,
+                "taxe": 23,
+                "totalSolo": 1659
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b34",
+        "date": "2017-02-28 12:02:49",
+        "customer": "雷洁",
+        "customerId": "63aaaafa14c7e256e8eb9b44",
+        "address": "福建省颖市闵行田路Y座",
+        "totalDeliveryFees": 34,
+        "totalExPrices": 2563,
+        "totalTaxes": 74,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 290,
+                "quantity": 2,
+                "taxe": 25,
+                "totalSolo": 605
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 177,
+                "quantity": 4,
+                "taxe": 29,
+                "totalSolo": 737
+            },
+            {
+                "product": "手表",
+                "status": "ordered",
+                "unitPrice": 425,
+                "quantity": 3,
+                "taxe": 20,
+                "totalSolo": 1295
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b35",
+        "date": "2020-04-24 19:04:15",
+        "customer": "曹斌",
+        "customerId": "63aaab0514c7e256e8eb9bac",
+        "address": "青海省瑞县闵行太原路G座",
+        "totalDeliveryFees": 31,
+        "totalExPrices": 2017,
+        "totalTaxes": 126,
+        "buyItems": [
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 103,
+                "quantity": 1,
+                "taxe": 40,
+                "totalSolo": 143
+            },
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 237,
+                "quantity": 4,
+                "taxe": 47,
+                "totalSolo": 995
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 483,
+                "quantity": 2,
+                "taxe": 39,
+                "totalSolo": 1005
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b36",
+        "date": "2017-12-16 06:12:40",
+        "customer": "林玲",
+        "customerId": "63aaaaf014c7e256e8eb9ae5",
+        "address": "陕西省沈阳市怀柔嘉禾街a座",
+        "totalDeliveryFees": 13,
+        "totalExPrices": 463,
+        "totalTaxes": 65,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 133,
+                "quantity": 1,
+                "taxe": 28,
+                "totalSolo": 161
+            },
+            {
+                "product": "手表",
+                "status": "delivered",
+                "unitPrice": 110,
+                "quantity": 3,
+                "taxe": 37,
+                "totalSolo": 367
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b37",
+        "date": "2018-04-20 01:15:53",
+        "customer": "廖旭",
+        "customerId": "63aaaaf914c7e256e8eb9b38",
+        "address": "广东省秀芳县普陀东莞街R座",
+        "totalDeliveryFees": 29,
+        "totalExPrices": 4461,
+        "totalTaxes": 140,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "ordered",
+                "unitPrice": 370,
+                "quantity": 4,
+                "taxe": 34,
+                "totalSolo": 1514
+            },
+            {
+                "product": "电动车",
+                "status": "ordered",
+                "unitPrice": 486,
+                "quantity": 1,
+                "taxe": 45,
+                "totalSolo": 531
+            },
+            {
+                "product": "手表",
+                "status": "delivered",
+                "unitPrice": 325,
+                "quantity": 3,
+                "taxe": 49,
+                "totalSolo": 1024
+            },
+            {
+                "product": "卷饼",
+                "status": "canceled",
+                "unitPrice": 380,
+                "quantity": 4,
+                "taxe": 12,
+                "totalSolo": 1532
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b38",
+        "date": "2022-02-13 02:40:49",
+        "customer": "李玲",
+        "customerId": "63aaaaee14c7e256e8eb9ad1",
+        "address": "广西壮族自治区马鞍山县大兴李路U座",
+        "totalDeliveryFees": 12,
+        "totalExPrices": 1379,
+        "totalTaxes": 90,
+        "buyItems": [
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 56,
+                "quantity": 3,
+                "taxe": 24,
+                "totalSolo": 192
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 245,
+                "quantity": 3,
+                "taxe": 16,
+                "totalSolo": 751
+            },
+            {
+                "product": "卷饼",
+                "status": "canceled",
+                "unitPrice": 119,
+                "quantity": 4,
+                "taxe": 50,
+                "totalSolo": 526
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b39",
+        "date": "2014-06-26 09:20:11",
+        "customer": "张桂珍",
+        "customerId": "63aaaaff14c7e256e8eb9b78",
+        "address": "云南省香港市滨城陈街f座",
+        "totalDeliveryFees": 14,
+        "totalExPrices": 2016,
+        "totalTaxes": 77,
+        "buyItems": [
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 354,
+                "quantity": 4,
+                "taxe": 35,
+                "totalSolo": 1451
+            },
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 300,
+                "quantity": 2,
+                "taxe": 42,
+                "totalSolo": 642
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b3a",
+        "date": "2017-06-11 06:46:57",
+        "customer": "吕娜",
+        "customerId": "63aaaaf114c7e256e8eb9aec",
+        "address": "河北省沈阳县淄川陈街q座",
+        "totalDeliveryFees": 35,
+        "totalExPrices": 3046,
+        "totalTaxes": 118,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 490,
+                "quantity": 2,
+                "taxe": 40,
+                "totalSolo": 1020
+            },
+            {
+                "product": "平板",
+                "status": "canceled",
+                "unitPrice": 41,
+                "quantity": 4,
+                "taxe": 47,
+                "totalSolo": 211
+            },
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 490,
+                "quantity": 3,
+                "taxe": 7,
+                "totalSolo": 1477
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 216,
+                "quantity": 2,
+                "taxe": 24,
+                "totalSolo": 456
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b3b",
+        "date": "2016-04-03 03:15:59",
+        "customer": "冷志强",
+        "customerId": "63aaaaf214c7e256e8eb9af7",
+        "address": "四川省博市门头沟连路R座",
+        "totalDeliveryFees": 26,
+        "totalExPrices": 236,
+        "totalTaxes": 12,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "ordered",
+                "unitPrice": 59,
+                "quantity": 4,
+                "taxe": 12,
+                "totalSolo": 248
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b3c",
+        "date": "2015-10-19 19:26:16",
+        "customer": "程小红",
+        "customerId": "63aaab0214c7e256e8eb9b90",
+        "address": "福建省华市门头沟杨路U座",
+        "totalDeliveryFees": 19,
+        "totalExPrices": 459,
+        "totalTaxes": 53,
+        "buyItems": [
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 27,
+                "quantity": 1,
+                "taxe": 27,
+                "totalSolo": 54
+            },
+            {
+                "product": "手表",
+                "status": "canceled",
+                "unitPrice": 432,
+                "quantity": 1,
+                "taxe": 26,
+                "totalSolo": 458
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b3d",
+        "date": "2017-02-10 06:17:39",
+        "customer": "邓秀兰",
+        "customerId": "63aaaaef14c7e256e8eb9ada",
+        "address": "山西省瑜市淄川梧州路e座",
+        "totalDeliveryFees": 21,
+        "totalExPrices": 224,
+        "totalTaxes": 39,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 224,
+                "quantity": 1,
+                "taxe": 39,
+                "totalSolo": 263
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ece914c7e25ba88b6b3e",
+        "date": "2013-07-27 04:33:35",
+        "customer": "黄桂花",
+        "customerId": "63aaaafc14c7e256e8eb9b5a",
+        "address": "湖北省红县吉区贵阳路F座",
+        "totalDeliveryFees": 40,
+        "totalExPrices": 117,
+        "totalTaxes": 47,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 117,
+                "quantity": 1,
+                "taxe": 47,
+                "totalSolo": 164
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b3f",
+        "date": "2013-11-22 02:34:53",
+        "customer": "谷秀珍",
+        "customerId": "63aaaaf814c7e256e8eb9b2c",
+        "address": "贵州省海口市萧山颜街Z座",
+        "totalDeliveryFees": 22,
+        "totalExPrices": 1066,
+        "totalTaxes": 80,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 122,
+                "quantity": 3,
+                "taxe": 47,
+                "totalSolo": 413
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 350,
+                "quantity": 2,
+                "taxe": 33,
+                "totalSolo": 733
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b40",
+        "date": "2017-05-24 01:32:52",
+        "customer": "陈华",
+        "customerId": "63aaaaf514c7e256e8eb9b0e",
+        "address": "辽宁省冬梅县牧野长沙路a座",
+        "totalDeliveryFees": 39,
+        "totalExPrices": 4422,
+        "totalTaxes": 72,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "delivered",
+                "unitPrice": 203,
+                "quantity": 4,
+                "taxe": 32,
+                "totalSolo": 844
+            },
+            {
+                "product": "木门",
+                "status": "canceled",
+                "unitPrice": 328,
+                "quantity": 3,
+                "taxe": 2,
+                "totalSolo": 986
+            },
+            {
+                "product": "手机",
+                "status": "canceled",
+                "unitPrice": 361,
+                "quantity": 2,
+                "taxe": 20,
+                "totalSolo": 742
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 476,
+                "quantity": 4,
+                "taxe": 18,
+                "totalSolo": 1922
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b41",
+        "date": "2017-06-09 01:59:22",
+        "customer": "许军",
+        "customerId": "63aaaaef14c7e256e8eb9add",
+        "address": "青海省哈尔滨市永川王路u座",
+        "totalDeliveryFees": 29,
+        "totalExPrices": 917,
+        "totalTaxes": 30,
+        "buyItems": [
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 85,
+                "quantity": 1,
+                "taxe": 4,
+                "totalSolo": 89
+            },
+            {
+                "product": "显示器",
+                "status": "canceled",
+                "unitPrice": 208,
+                "quantity": 4,
+                "taxe": 26,
+                "totalSolo": 858
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b42",
+        "date": "2014-04-10 22:25:33",
+        "customer": "孙璐",
+        "customerId": "63aaaaf914c7e256e8eb9b3c",
+        "address": "山东省秀华县城北长春路i座",
+        "totalDeliveryFees": 13,
+        "totalExPrices": 1403,
+        "totalTaxes": 72,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 285,
+                "quantity": 1,
+                "taxe": 22,
+                "totalSolo": 307
+            },
+            {
+                "product": "乒乓球",
+                "status": "canceled",
+                "unitPrice": 316,
+                "quantity": 2,
+                "taxe": 21,
+                "totalSolo": 653
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 243,
+                "quantity": 2,
+                "taxe": 29,
+                "totalSolo": 515
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b43",
+        "date": "2015-10-22 06:50:28",
+        "customer": "罗秀珍",
+        "customerId": "63aaab0014c7e256e8eb9b7f",
+        "address": "湖北省南京市海港天津街u座",
+        "totalDeliveryFees": 18,
+        "totalExPrices": 456,
+        "totalTaxes": 27,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 32,
+                "quantity": 4,
+                "taxe": 22,
+                "totalSolo": 150
+            },
+            {
+                "product": "感冒药",
+                "status": "canceled",
+                "unitPrice": 164,
+                "quantity": 2,
+                "taxe": 5,
+                "totalSolo": 333
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b44",
+        "date": "2022-05-03 23:55:01",
+        "customer": "骆娟",
+        "customerId": "63aaaafe14c7e256e8eb9b70",
+        "address": "山西省六盘水县西峰昆明路K座",
+        "totalDeliveryFees": 31,
+        "totalExPrices": 1948,
+        "totalTaxes": 27,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 487,
+                "quantity": 4,
+                "taxe": 27,
+                "totalSolo": 1975
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b45",
+        "date": "2019-04-15 22:39:30",
+        "customer": "林阳",
+        "customerId": "63aaaaf014c7e256e8eb9ae2",
+        "address": "上海市辽阳县梁平周街i座",
+        "totalDeliveryFees": 24,
+        "totalExPrices": 656,
+        "totalTaxes": 124,
+        "buyItems": [
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 229,
+                "quantity": 1,
+                "taxe": 41,
+                "totalSolo": 270
+            },
+            {
+                "product": "木门",
+                "status": "canceled",
+                "unitPrice": 191,
+                "quantity": 1,
+                "taxe": 45,
+                "totalSolo": 236
+            },
+            {
+                "product": "手机",
+                "status": "canceled",
+                "unitPrice": 15,
+                "quantity": 4,
+                "taxe": 18,
+                "totalSolo": 78
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 88,
+                "quantity": 2,
+                "taxe": 20,
+                "totalSolo": 196
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b46",
+        "date": "2013-07-02 01:24:15",
+        "customer": "孔璐",
+        "customerId": "63aaaafe14c7e256e8eb9b6d",
+        "address": "山西省瑞市秀英郑州路n座",
+        "totalDeliveryFees": 39,
+        "totalExPrices": 2265,
+        "totalTaxes": 78,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 84,
+                "quantity": 1,
+                "taxe": 44,
+                "totalSolo": 128
+            },
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 327,
+                "quantity": 3,
+                "taxe": 2,
+                "totalSolo": 983
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 300,
+                "quantity": 4,
+                "taxe": 32,
+                "totalSolo": 1232
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b47",
+        "date": "2022-10-02 11:12:33",
+        "customer": "吴丽",
+        "customerId": "63aaab0714c7e256e8eb9bc3",
+        "address": "香港特别行政区秀兰县浔阳沈阳路m座",
+        "totalDeliveryFees": 28,
+        "totalExPrices": 321,
+        "totalTaxes": 13,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "ordered",
+                "unitPrice": 321,
+                "quantity": 1,
+                "taxe": 13,
+                "totalSolo": 334
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b48",
+        "date": "2013-01-19 09:10:36",
+        "customer": "朱波",
+        "customerId": "63aaab0814c7e256e8eb9bc8",
+        "address": "河南省利市涪城西安路l座",
+        "totalDeliveryFees": 38,
+        "totalExPrices": 1768,
+        "totalTaxes": 56,
+        "buyItems": [
+            {
+                "product": "感冒药",
+                "status": "canceled",
+                "unitPrice": 220,
+                "quantity": 3,
+                "taxe": 49,
+                "totalSolo": 709
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 277,
+                "quantity": 4,
+                "taxe": 7,
+                "totalSolo": 1115
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b49",
+        "date": "2019-05-27 17:45:23",
+        "customer": "樊彬",
+        "customerId": "63aaab0414c7e256e8eb9ba7",
+        "address": "吉林省阳县璧山宜都路Q座",
+        "totalDeliveryFees": 31,
+        "totalExPrices": 2496,
+        "totalTaxes": 58,
+        "buyItems": [
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 30,
+                "quantity": 2,
+                "taxe": 16,
+                "totalSolo": 76
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 419,
+                "quantity": 4,
+                "taxe": 29,
+                "totalSolo": 1705
+            },
+            {
+                "product": "手表",
+                "status": "canceled",
+                "unitPrice": 380,
+                "quantity": 2,
+                "taxe": 13,
+                "totalSolo": 773
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b4a",
+        "date": "2017-09-28 18:38:56",
+        "customer": "孙雷",
+        "customerId": "63aaaafb14c7e256e8eb9b4c",
+        "address": "陕西省香港县孝南蒋街D座",
+        "totalDeliveryFees": 33,
+        "totalExPrices": 354,
+        "totalTaxes": 47,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 177,
+                "quantity": 2,
+                "taxe": 47,
+                "totalSolo": 401
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b4b",
+        "date": "2015-01-22 14:25:20",
+        "customer": "朱淑兰",
+        "customerId": "63aaaafd14c7e256e8eb9b67",
+        "address": "山东省军市和平成都路f座",
+        "totalDeliveryFees": 21,
+        "totalExPrices": 2690,
+        "totalTaxes": 117,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 39,
+                "quantity": 2,
+                "taxe": 23,
+                "totalSolo": 101
+            },
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 329,
+                "quantity": 4,
+                "taxe": 38,
+                "totalSolo": 1354
+            },
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 126,
+                "quantity": 4,
+                "taxe": 6,
+                "totalSolo": 510
+            },
+            {
+                "product": "卷饼",
+                "status": "canceled",
+                "unitPrice": 198,
+                "quantity": 4,
+                "taxe": 50,
+                "totalSolo": 842
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b4c",
+        "date": "2016-01-13 13:09:42",
+        "customer": "赵海燕",
+        "customerId": "63aaab0314c7e256e8eb9b98",
+        "address": "四川省大冶县高港钟路c座",
+        "totalDeliveryFees": 27,
+        "totalExPrices": 839,
+        "totalTaxes": 101,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "canceled",
+                "unitPrice": 151,
+                "quantity": 1,
+                "taxe": 43,
+                "totalSolo": 194
+            },
+            {
+                "product": "手机",
+                "status": "canceled",
+                "unitPrice": 158,
+                "quantity": 2,
+                "taxe": 15,
+                "totalSolo": 331
+            },
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 186,
+                "quantity": 2,
+                "taxe": 43,
+                "totalSolo": 415
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecea14c7e25ba88b6b4d",
+        "date": "2013-01-22 06:20:51",
+        "customer": "郭成",
+        "customerId": "63aaab0714c7e256e8eb9bc5",
+        "address": "广西壮族自治区伟市丰都广州街h座",
+        "totalDeliveryFees": 32,
+        "totalExPrices": 2209,
+        "totalTaxes": 112,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 444,
+                "quantity": 2,
+                "taxe": 31,
+                "totalSolo": 919
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 271,
+                "quantity": 4,
+                "taxe": 47,
+                "totalSolo": 1131
+            },
+            {
+                "product": "手套",
+                "status": "canceled",
+                "unitPrice": 79,
+                "quantity": 3,
+                "taxe": 34,
+                "totalSolo": 271
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b4e",
+        "date": "2020-09-13 15:31:10",
+        "customer": "王红梅",
+        "customerId": "63aaaafd14c7e256e8eb9b5d",
+        "address": "香港特别行政区拉萨市永川香港路Y座",
+        "totalDeliveryFees": 16,
+        "totalExPrices": 1294,
+        "totalTaxes": 31,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 231,
+                "quantity": 4,
+                "taxe": 9,
+                "totalSolo": 933
+            },
+            {
+                "product": "木门",
+                "status": "canceled",
+                "unitPrice": 370,
+                "quantity": 1,
+                "taxe": 22,
+                "totalSolo": 392
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b4f",
+        "date": "2018-05-11 12:57:49",
+        "customer": "郑淑华",
+        "customerId": "63aaab0414c7e256e8eb9ba2",
+        "address": "北京市凤兰县永川叶路s座",
+        "totalDeliveryFees": 27,
+        "totalExPrices": 1480,
+        "totalTaxes": 116,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 377,
+                "quantity": 3,
+                "taxe": 17,
+                "totalSolo": 1148
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 119,
+                "quantity": 1,
+                "taxe": 38,
+                "totalSolo": 157
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 67,
+                "quantity": 2,
+                "taxe": 12,
+                "totalSolo": 146
+            },
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 48,
+                "quantity": 2,
+                "taxe": 49,
+                "totalSolo": 145
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b50",
+        "date": "2018-01-15 16:10:34",
+        "customer": "姜林",
+        "customerId": "63aaaafd14c7e256e8eb9b60",
+        "address": "山东省坤县高明王街M座",
+        "totalDeliveryFees": 10,
+        "totalExPrices": 771,
+        "totalTaxes": 48,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 257,
+                "quantity": 3,
+                "taxe": 48,
+                "totalSolo": 819
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b51",
+        "date": "2019-06-30 09:12:40",
+        "customer": "陈浩",
+        "customerId": "63aaab0514c7e256e8eb9bb0",
+        "address": "北京市潮州县蓟州唐街F座",
+        "totalDeliveryFees": 34,
+        "totalExPrices": 1137,
+        "totalTaxes": 12,
+        "buyItems": [
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 276,
+                "quantity": 1,
+                "taxe": 4,
+                "totalSolo": 280
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 287,
+                "quantity": 3,
+                "taxe": 8,
+                "totalSolo": 869
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b52",
+        "date": "2016-11-13 21:28:46",
+        "customer": "刘利",
+        "customerId": "63aaab0114c7e256e8eb9b84",
+        "address": "西藏自治区畅市浔阳银川街O座",
+        "totalDeliveryFees": 33,
+        "totalExPrices": 1028,
+        "totalTaxes": 22,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 92,
+                "quantity": 2,
+                "taxe": 10,
+                "totalSolo": 194
+            },
+            {
+                "product": "乒乓球",
+                "status": "canceled",
+                "unitPrice": 422,
+                "quantity": 2,
+                "taxe": 12,
+                "totalSolo": 856
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b53",
+        "date": "2022-09-02 17:32:24",
+        "customer": "张玉华",
+        "customerId": "63aaaaf614c7e256e8eb9b19",
+        "address": "江西省太原县合川刘街C座",
+        "totalDeliveryFees": 34,
+        "totalExPrices": 1535,
+        "totalTaxes": 79,
+        "buyItems": [
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 282,
+                "quantity": 2,
+                "taxe": 25,
+                "totalSolo": 589
+            },
+            {
+                "product": "手表",
+                "status": "delivered",
+                "unitPrice": 121,
+                "quantity": 3,
+                "taxe": 38,
+                "totalSolo": 401
+            },
+            {
+                "product": "电动车",
+                "status": "delivered",
+                "unitPrice": 304,
+                "quantity": 2,
+                "taxe": 16,
+                "totalSolo": 624
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b54",
+        "date": "2019-09-04 15:24:26",
+        "customer": "刘兵",
+        "customerId": "63aaab0714c7e256e8eb9bbe",
+        "address": "广东省宜都市门头沟六盘水街W座",
+        "totalDeliveryFees": 18,
+        "totalExPrices": 456,
+        "totalTaxes": 63,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "ordered",
+                "unitPrice": 194,
+                "quantity": 2,
+                "taxe": 49,
+                "totalSolo": 437
+            },
+            {
+                "product": "耳机",
+                "status": "canceled",
+                "unitPrice": 34,
+                "quantity": 2,
+                "taxe": 14,
+                "totalSolo": 82
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b55",
+        "date": "2021-02-27 22:04:11",
+        "customer": "宋娜",
+        "customerId": "63aaaaee14c7e256e8eb9ad4",
+        "address": "河北省萍县高港张路E座",
+        "totalDeliveryFees": 28,
+        "totalExPrices": 216,
+        "totalTaxes": 30,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 216,
+                "quantity": 1,
+                "taxe": 30,
+                "totalSolo": 246
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b56",
+        "date": "2016-04-23 07:39:42",
+        "customer": "龙楠",
+        "customerId": "63aaab0214c7e256e8eb9b96",
+        "address": "新疆维吾尔自治区淮安县和平杨街H座",
+        "totalDeliveryFees": 14,
+        "totalExPrices": 2291,
+        "totalTaxes": 104,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 282,
+                "quantity": 4,
+                "taxe": 37,
+                "totalSolo": 1165
+            },
+            {
+                "product": "乒乓球",
+                "status": "canceled",
+                "unitPrice": 78,
+                "quantity": 3,
+                "taxe": 7,
+                "totalSolo": 241
+            },
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 251,
+                "quantity": 1,
+                "taxe": 32,
+                "totalSolo": 283
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 339,
+                "quantity": 2,
+                "taxe": 28,
+                "totalSolo": 706
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b57",
+        "date": "2014-12-25 04:38:55",
+        "customer": "刘秀华",
+        "customerId": "63aaaafc14c7e256e8eb9b58",
+        "address": "重庆市北京市南长东莞路f座",
+        "totalDeliveryFees": 31,
+        "totalExPrices": 1495,
+        "totalTaxes": 86,
+        "buyItems": [
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 298,
+                "quantity": 1,
+                "taxe": 35,
+                "totalSolo": 333
+            },
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 474,
+                "quantity": 1,
+                "taxe": 14,
+                "totalSolo": 488
+            },
+            {
+                "product": "手套",
+                "status": "ordered",
+                "unitPrice": 241,
+                "quantity": 3,
+                "taxe": 37,
+                "totalSolo": 760
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b58",
+        "date": "2016-10-26 04:00:37",
+        "customer": "覃梅",
+        "customerId": "63aaaaf414c7e256e8eb9b04",
+        "address": "上海市银川县东城马街S座",
+        "totalDeliveryFees": 38,
+        "totalExPrices": 652,
+        "totalTaxes": 16,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 54,
+                "quantity": 3,
+                "taxe": 12,
+                "totalSolo": 174
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 490,
+                "quantity": 1,
+                "taxe": 4,
+                "totalSolo": 494
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b59",
+        "date": "2020-08-02 23:33:57",
+        "customer": "贾桂香",
+        "customerId": "63aaab0314c7e256e8eb9b9c",
+        "address": "浙江省玉珍市浔阳黄街X座",
+        "totalDeliveryFees": 40,
+        "totalExPrices": 586,
+        "totalTaxes": 53,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 16,
+                "quantity": 1,
+                "taxe": 15,
+                "totalSolo": 31
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 190,
+                "quantity": 3,
+                "taxe": 38,
+                "totalSolo": 608
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b5a",
+        "date": "2013-01-26 03:02:03",
+        "customer": "欧东",
+        "customerId": "63aaaaf114c7e256e8eb9aef",
+        "address": "新疆维吾尔自治区建平县沙市郭街p座",
+        "totalDeliveryFees": 18,
+        "totalExPrices": 2148,
+        "totalTaxes": 71,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 258,
+                "quantity": 3,
+                "taxe": 38,
+                "totalSolo": 812
+            },
+            {
+                "product": "乒乓球",
+                "status": "canceled",
+                "unitPrice": 458,
+                "quantity": 3,
+                "taxe": 33,
+                "totalSolo": 1407
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eceb14c7e25ba88b6b5b",
+        "date": "2016-02-06 04:31:39",
+        "customer": "王健",
+        "customerId": "63aaaaf614c7e256e8eb9b21",
+        "address": "山东省瑜市徐汇武汉街y座",
+        "totalDeliveryFees": 16,
+        "totalExPrices": 1725,
+        "totalTaxes": 21,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 399,
+                "quantity": 3,
+                "taxe": 7,
+                "totalSolo": 1204
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 132,
+                "quantity": 4,
+                "taxe": 14,
+                "totalSolo": 542
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b5c",
+        "date": "2017-02-17 12:46:27",
+        "customer": "郭玉英",
+        "customerId": "63aaaaf514c7e256e8eb9b11",
+        "address": "内蒙古自治区柳州县吉区贵阳路K座",
+        "totalDeliveryFees": 17,
+        "totalExPrices": 2164,
+        "totalTaxes": 90,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "delivered",
+                "unitPrice": 268,
+                "quantity": 4,
+                "taxe": 49,
+                "totalSolo": 1121
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 155,
+                "quantity": 4,
+                "taxe": 29,
+                "totalSolo": 649
+            },
+            {
+                "product": "感冒药",
+                "status": "ordered",
+                "unitPrice": 118,
+                "quantity": 4,
+                "taxe": 12,
+                "totalSolo": 484
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b5d",
+        "date": "2019-02-17 03:51:54",
+        "customer": "谭静",
+        "customerId": "63aaaaf314c7e256e8eb9afd",
+        "address": "四川省岩县永川杨街h座",
+        "totalDeliveryFees": 19,
+        "totalExPrices": 1729,
+        "totalTaxes": 111,
+        "buyItems": [
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 371,
+                "quantity": 2,
+                "taxe": 40,
+                "totalSolo": 782
+            },
+            {
+                "product": "电动车",
+                "status": "ordered",
+                "unitPrice": 417,
+                "quantity": 2,
+                "taxe": 23,
+                "totalSolo": 857
+            },
+            {
+                "product": "平板",
+                "status": "ordered",
+                "unitPrice": 102,
+                "quantity": 1,
+                "taxe": 42,
+                "totalSolo": 144
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 51,
+                "quantity": 1,
+                "taxe": 6,
+                "totalSolo": 57
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b5e",
+        "date": "2019-09-30 06:56:03",
+        "customer": "殷荣",
+        "customerId": "63aaaafb14c7e256e8eb9b50",
+        "address": "宁夏回族自治区红市西峰惠州路T座",
+        "totalDeliveryFees": 29,
+        "totalExPrices": 1538,
+        "totalTaxes": 108,
+        "buyItems": [
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 293,
+                "quantity": 2,
+                "taxe": 38,
+                "totalSolo": 624
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 13,
+                "quantity": 2,
+                "taxe": 29,
+                "totalSolo": 55
+            },
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 463,
+                "quantity": 2,
+                "taxe": 41,
+                "totalSolo": 967
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b5f",
+        "date": "2019-08-29 05:51:27",
+        "customer": "吴建",
+        "customerId": "63aaab0214c7e256e8eb9b92",
+        "address": "贵州省斌县清河王路M座",
+        "totalDeliveryFees": 16,
+        "totalExPrices": 2468,
+        "totalTaxes": 92,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "delivered",
+                "unitPrice": 97,
+                "quantity": 2,
+                "taxe": 50,
+                "totalSolo": 244
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 79,
+                "quantity": 2,
+                "taxe": 2,
+                "totalSolo": 160
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 448,
+                "quantity": 1,
+                "taxe": 17,
+                "totalSolo": 465
+            },
+            {
+                "product": "手表",
+                "status": "delivered",
+                "unitPrice": 417,
+                "quantity": 4,
+                "taxe": 23,
+                "totalSolo": 1691
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b60",
+        "date": "2013-06-08 08:18:11",
+        "customer": "彭军",
+        "customerId": "63aaab0514c7e256e8eb9bb3",
+        "address": "澳门特别行政区想县海港惠州街Y座",
+        "totalDeliveryFees": 10,
+        "totalExPrices": 580,
+        "totalTaxes": 57,
+        "buyItems": [
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 197,
+                "quantity": 2,
+                "taxe": 21,
+                "totalSolo": 415
+            },
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 186,
+                "quantity": 1,
+                "taxe": 36,
+                "totalSolo": 222
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b61",
+        "date": "2017-03-06 21:44:07",
+        "customer": "萧秀华",
+        "customerId": "63aaab0114c7e256e8eb9b88",
+        "address": "辽宁省淑华市安次长春路R座",
+        "totalDeliveryFees": 18,
+        "totalExPrices": 604,
+        "totalTaxes": 33,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 302,
+                "quantity": 2,
+                "taxe": 33,
+                "totalSolo": 637
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b62",
+        "date": "2016-06-16 03:55:07",
+        "customer": "王凤兰",
+        "customerId": "63aaab0814c7e256e8eb9bcf",
+        "address": "贵州省明县长寿曹街h座",
+        "totalDeliveryFees": 28,
+        "totalExPrices": 2175,
+        "totalTaxes": 50,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 457,
+                "quantity": 3,
+                "taxe": 34,
+                "totalSolo": 1405
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 268,
+                "quantity": 3,
+                "taxe": 16,
+                "totalSolo": 820
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b63",
+        "date": "2014-05-27 12:17:36",
+        "customer": "陈静",
+        "customerId": "63aaaafb14c7e256e8eb9b4a",
+        "address": "湖北省上海县沈北新李街q座",
+        "totalDeliveryFees": 34,
+        "totalExPrices": 49,
+        "totalTaxes": 25,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 49,
+                "quantity": 1,
+                "taxe": 25,
+                "totalSolo": 74
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b64",
+        "date": "2020-01-28 04:55:26",
+        "customer": "叶文",
+        "customerId": "63aaaaf714c7e256e8eb9b25",
+        "address": "台湾省雪梅县蓟州宁德街c座",
+        "totalDeliveryFees": 26,
+        "totalExPrices": 773,
+        "totalTaxes": 97,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "canceled",
+                "unitPrice": 334,
+                "quantity": 2,
+                "taxe": 47,
+                "totalSolo": 715
+            },
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 35,
+                "quantity": 3,
+                "taxe": 50,
+                "totalSolo": 155
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b65",
+        "date": "2017-07-09 00:07:33",
+        "customer": "周博",
+        "customerId": "63aaab0814c7e256e8eb9bcd",
+        "address": "宁夏回族自治区台北县沈河何街i座",
+        "totalDeliveryFees": 33,
+        "totalExPrices": 3369,
+        "totalTaxes": 94,
+        "buyItems": [
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 258,
+                "quantity": 4,
+                "taxe": 33,
+                "totalSolo": 1065
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 45,
+                "quantity": 1,
+                "taxe": 20,
+                "totalSolo": 65
+            },
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 77,
+                "quantity": 4,
+                "taxe": 2,
+                "totalSolo": 310
+            },
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 496,
+                "quantity": 4,
+                "taxe": 39,
+                "totalSolo": 2023
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b66",
+        "date": "2018-03-11 11:47:24",
+        "customer": "冯桂英",
+        "customerId": "63aaaaf714c7e256e8eb9b28",
+        "address": "青海省南昌市长寿重庆街s座",
+        "totalDeliveryFees": 39,
+        "totalExPrices": 1194,
+        "totalTaxes": 130,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 441,
+                "quantity": 1,
+                "taxe": 42,
+                "totalSolo": 483
+            },
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 159,
+                "quantity": 4,
+                "taxe": 40,
+                "totalSolo": 676
+            },
+            {
+                "product": "手表",
+                "status": "canceled",
+                "unitPrice": 39,
+                "quantity": 3,
+                "taxe": 48,
+                "totalSolo": 165
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b67",
+        "date": "2014-11-08 23:26:58",
+        "customer": "冯桂芝",
+        "customerId": "63aaab0114c7e256e8eb9b8c",
+        "address": "河南省瑞市吉区兴安盟路C座",
+        "totalDeliveryFees": 38,
+        "totalExPrices": 470,
+        "totalTaxes": 41,
+        "buyItems": [
+            {
+                "product": "手表",
+                "status": "canceled",
+                "unitPrice": 235,
+                "quantity": 2,
+                "taxe": 41,
+                "totalSolo": 511
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b68",
+        "date": "2018-09-21 06:23:33",
+        "customer": "吴博",
+        "customerId": "63aaab0614c7e256e8eb9bbb",
+        "address": "新疆维吾尔自治区斌县兴山呼和浩特街e座",
+        "totalDeliveryFees": 36,
+        "totalExPrices": 370,
+        "totalTaxes": 1,
+        "buyItems": [
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 185,
+                "quantity": 2,
+                "taxe": 1,
+                "totalSolo": 371
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b69",
+        "date": "2015-12-20 22:35:08",
+        "customer": "帅玉英",
+        "customerId": "63aaaafe14c7e256e8eb9b6b",
+        "address": "湖南省荆门市永川石家庄街S座",
+        "totalDeliveryFees": 28,
+        "totalExPrices": 2091,
+        "totalTaxes": 93,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "delivered",
+                "unitPrice": 485,
+                "quantity": 3,
+                "taxe": 31,
+                "totalSolo": 1486
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 82,
+                "quantity": 3,
+                "taxe": 45,
+                "totalSolo": 291
+            },
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 130,
+                "quantity": 3,
+                "taxe": 17,
+                "totalSolo": 407
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b6a",
+        "date": "2013-08-24 23:51:18",
+        "customer": "刘桂香",
+        "customerId": "63aaaaf814c7e256e8eb9b34",
+        "address": "河北省静市沙湾辽阳路C座",
+        "totalDeliveryFees": 40,
+        "totalExPrices": 803,
+        "totalTaxes": 45,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "ordered",
+                "unitPrice": 416,
+                "quantity": 1,
+                "taxe": 16,
+                "totalSolo": 432
+            },
+            {
+                "product": "卷饼",
+                "status": "canceled",
+                "unitPrice": 129,
+                "quantity": 3,
+                "taxe": 29,
+                "totalSolo": 416
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3ecec14c7e25ba88b6b6b",
+        "date": "2019-10-23 21:15:00",
+        "customer": "夏博",
+        "customerId": "63aaab0414c7e256e8eb9ba5",
+        "address": "吉林省明县梁平沈阳街Q座",
+        "totalDeliveryFees": 38,
+        "totalExPrices": 2898,
+        "totalTaxes": 33,
+        "buyItems": [
+            {
+                "product": "显示器",
+                "status": "delivered",
+                "unitPrice": 482,
+                "quantity": 4,
+                "taxe": 27,
+                "totalSolo": 1955
+            },
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 485,
+                "quantity": 2,
+                "taxe": 6,
+                "totalSolo": 976
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b6c",
+        "date": "2015-08-17 13:03:50",
+        "customer": "姜利",
+        "customerId": "63aaab0214c7e256e8eb9b94",
+        "address": "四川省倩市白云重庆路S座",
+        "totalDeliveryFees": 21,
+        "totalExPrices": 1748,
+        "totalTaxes": 45,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 437,
+                "quantity": 4,
+                "taxe": 45,
+                "totalSolo": 1793
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b6d",
+        "date": "2015-02-25 19:00:50",
+        "customer": "李红",
+        "customerId": "63aaaaff14c7e256e8eb9b74",
+        "address": "宁夏回族自治区淑珍市城北嘉禾路L座",
+        "totalDeliveryFees": 12,
+        "totalExPrices": 2408,
+        "totalTaxes": 69,
+        "buyItems": [
+            {
+                "product": "苹果",
+                "status": "canceled",
+                "unitPrice": 426,
+                "quantity": 2,
+                "taxe": 9,
+                "totalSolo": 861
+            },
+            {
+                "product": "手机",
+                "status": "ordered",
+                "unitPrice": 160,
+                "quantity": 3,
+                "taxe": 15,
+                "totalSolo": 495
+            },
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 270,
+                "quantity": 2,
+                "taxe": 15,
+                "totalSolo": 555
+            },
+            {
+                "product": "手机",
+                "status": "delivered",
+                "unitPrice": 134,
+                "quantity": 4,
+                "taxe": 30,
+                "totalSolo": 566
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b6e",
+        "date": "2019-09-04 14:16:46",
+        "customer": "陈芳",
+        "customerId": "63aaab0614c7e256e8eb9bb7",
+        "address": "陕西省丹县西峰翟街W座",
+        "totalDeliveryFees": 10,
+        "totalExPrices": 118,
+        "totalTaxes": 41,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 118,
+                "quantity": 1,
+                "taxe": 41,
+                "totalSolo": 159
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b6f",
+        "date": "2017-05-14 05:48:58",
+        "customer": "刘峰",
+        "customerId": "63aaaaf214c7e256e8eb9af3",
+        "address": "甘肃省宇县滨城宋街G座",
+        "totalDeliveryFees": 34,
+        "totalExPrices": 1967,
+        "totalTaxes": 46,
+        "buyItems": [
+            {
+                "product": "乒乓球",
+                "status": "delivered",
+                "unitPrice": 92,
+                "quantity": 3,
+                "taxe": 21,
+                "totalSolo": 297
+            },
+            {
+                "product": "感冒药",
+                "status": "delivered",
+                "unitPrice": 39,
+                "quantity": 1,
+                "taxe": 17,
+                "totalSolo": 56
+            },
+            {
+                "product": "卷饼",
+                "status": "delivered",
+                "unitPrice": 413,
+                "quantity": 4,
+                "taxe": 8,
+                "totalSolo": 1660
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b70",
+        "date": "2016-11-11 21:38:31",
+        "customer": "李文",
+        "customerId": "63aaaaf714c7e256e8eb9b2a",
+        "address": "辽宁省成县花溪六安街n座",
+        "totalDeliveryFees": 33,
+        "totalExPrices": 137,
+        "totalTaxes": 36,
+        "buyItems": [
+            {
+                "product": "卷饼",
+                "status": "ordered",
+                "unitPrice": 137,
+                "quantity": 1,
+                "taxe": 36,
+                "totalSolo": 173
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b71",
+        "date": "2014-07-24 16:22:47",
+        "customer": "贺金凤",
+        "customerId": "63aaab0714c7e256e8eb9bc1",
+        "address": "黑龙江省南京市清河陈街Q座",
+        "totalDeliveryFees": 12,
+        "totalExPrices": 958,
+        "totalTaxes": 72,
+        "buyItems": [
+            {
+                "product": "手套",
+                "status": "delivered",
+                "unitPrice": 149,
+                "quantity": 3,
+                "taxe": 2,
+                "totalSolo": 449
+            },
+            {
+                "product": "木门",
+                "status": "delivered",
+                "unitPrice": 119,
+                "quantity": 2,
+                "taxe": 36,
+                "totalSolo": 274
+            },
+            {
+                "product": "感冒药",
+                "status": "ordered",
+                "unitPrice": 273,
+                "quantity": 1,
+                "taxe": 34,
+                "totalSolo": 307
+            }
+        ]
+    },
+    {
+        "orderCode": "63b3eced14c7e25ba88b6b72",
+        "date": "2020-08-19 11:46:58",
+        "customer": "姜兵",
+        "customerId": "63aaaaef14c7e256e8eb9ad8",
+        "address": "广东省秀荣市长寿南宁路L座",
+        "totalDeliveryFees": 36,
+        "totalExPrices": 1972,
+        "totalTaxes": 97,
+        "buyItems": [
+            {
+                "product": "耳机",
+                "status": "delivered",
+                "unitPrice": 451,
+                "quantity": 1,
+                "taxe": 32,
+                "totalSolo": 483
+            },
+            {
+                "product": "木门",
+                "status": "canceled",
+                "unitPrice": 321,
+                "quantity": 3,
+                "taxe": 25,
+                "totalSolo": 988
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 114,
+                "quantity": 3,
+                "taxe": 30,
+                "totalSolo": 372
+            },
+            {
+                "product": "平板",
+                "status": "delivered",
+                "unitPrice": 54,
+                "quantity": 4,
+                "taxe": 10,
+                "totalSolo": 226
+            }
+        ]
+    }
+]

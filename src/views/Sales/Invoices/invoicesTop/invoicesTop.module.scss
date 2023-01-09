@@ -1,0 +1,26 @@
+@import '@/assets/styles/global.scss';
+
+.salesTopWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendarsWrap {
+  display: flex;
+  .calendarWrap {
+    margin-right: 10px;
+  }
+}
+
+.optionBtn {
+  height: 40px;
+  margin-right: 24px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  color: $blue;
+  font-weight: 600;
+  &:hover {
+    background-color: #e7e7f7;
+  }      
+}

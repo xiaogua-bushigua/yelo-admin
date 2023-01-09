@@ -1,0 +1,107 @@
+@import '@/assets/styles/global.scss';
+
+.wrap {
+	width: 800px;
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+	border: 1px solid $border-color;
+  border-bottom: none;
+	padding: 20px 16px;
+	.infoWrap {
+		display: flex;
+    margin-bottom: 24px;
+		.rowTitle {
+			font-size: 22px;
+			font-family: 'Bahnschrift SemiBold';
+			margin-bottom: 18px;
+		}
+		.colContent {
+			margin-right: 30px;
+			.contentWrap {
+				margin-bottom: 16px;
+				.sonTitle {
+					font-size: 12px;
+					color: $gray-font-light;
+					margin-bottom: 8px;
+				}
+				.content {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+.totals {
+  margin-top: 24px;
+  .totalWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 2px solid $border-color;
+    width: 600px;
+    color: $gray-font;
+  }
+}
+
+.btnWrap {
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+  height: 60px;
+  width: 800px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 0 0 10px 10px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $border-color;
+  border-top: none;
+  .botIcon {
+    height: 30px;
+    padding: 4px 6px;
+  }
+  .deleteIcon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: $red;
+    &:hover {
+      background-color: rgb(238, 194, 194);
+      color: $red;
+    }
+  }
+  .saveIcon {
+    font-size: 18px;
+    color: $gray-font-light;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: auto;
+    &:hover {
+      color: $gray-font-light;
+      background-color: rgb(220, 220, 220);
+    }
+  }
+  .saveActived {
+    transition: 0.3;
+    background-color: $blue;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue-dark;
+      color: #fff;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.35);
+    }
+  }
+}
+
+// .table {
+//   tr {
+//     z-index: 10 !important;
+//     position: relative !important;
+//   }
+// }

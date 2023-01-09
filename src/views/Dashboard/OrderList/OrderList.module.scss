@@ -1,0 +1,43 @@
+@import '@/assets/styles/global.scss';
+
+.ordersList {
+	padding: 14px 0;
+	.Title {
+		font-size: 22px;
+		padding: 20px;
+		font-family: 'Bahnschrift SemiBold';
+		color: $gray-font;
+	}
+	.orderWrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 20px;
+    transition: 0.3s;
+		cursor: pointer;
+		.left {
+			display: flex;
+			.leftText {
+				margin-left: 14px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				font-size: 14px;
+				.date {
+					color: $gray-font;
+					margin-bottom: 4px;
+				}
+				.name {
+					color: $gray-font-light;
+				}
+			}
+		}
+		.money {
+			margin-right: 26px;
+		}
+		&:hover {
+			background-color: rgb(246, 246, 246);
+			transition: 0.3s;
+		}
+	}
+}

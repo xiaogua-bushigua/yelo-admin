@@ -1,0 +1,17 @@
+@import '@/assets/styles/global.scss';
+
+.infoPageWrap {
+  margin-top: 10px;
+  display: flex;
+  .leftWrap {
+    flex: 1;
+    height: fit-content;
+    margin-right: 10px;
+    // padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+  }
+  .rightWrap {
+    width: 314px !important;
+  }
+}

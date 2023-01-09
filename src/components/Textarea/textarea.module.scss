@@ -1,0 +1,34 @@
+@import '@/assets/styles/global.scss';
+
+.TextareaWrap {
+  background-color: #f2f5ff;
+  border-radius: 12px 12px 0 0;
+	.Textarea {
+    background-color: #f2f5ff;
+		outline: none;
+		border: none;
+		border-bottom: 2px solid #686868;
+		padding: 0px 8px 4px 8px;
+    transition: 0.3s;
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    line-height: 24px;
+	}
+	.TextareaTitle {
+		color: #686868;
+		font-weight: 400;
+    transition: 0.3s;
+    cursor: text;
+    padding: 10px;
+    padding-bottom: 0;
+	}
+  .TitleFocus {
+    color: $blue;
+    transition: 0.3s;
+  }
+  .TextareaFocus {
+    border-bottom: 2px solid $blue;
+    transition: 0.3s;
+  }
+}

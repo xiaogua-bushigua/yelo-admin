@@ -1,0 +1,123 @@
+@import '@/assets/styles/global.scss';
+
+.invoicesTableWrap {
+	position: relative;
+	.selectItemsInfoWrap {
+		position: absolute;
+		left: 0;
+		top: -50px;
+		z-index: 30;
+		width: 100%;
+		display: flex;
+		height: 50px;
+		line-height: 50px;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #efebfc;
+		border-radius: 10px 10px 0 0;
+		padding-left: 20px;
+		padding-right: 10px;
+		color: $blue;
+
+		transition: 0.3s;
+		opacity: 0;
+		transform: scaleY(0);
+		.selectInfoRight {
+			button {
+				color: $blue;
+				font-size: 16px;
+				padding: 4px 6px;
+				height: 40px;
+				&:hover {
+					color: $blue !important;
+				}
+			}
+		}
+		.selectInfoLeft {
+			button {
+				background-color: #efebfc;
+				padding: 0 !important;
+				border: none !important;
+				margin-right: 10px;
+				color: $blue-dark;
+			}
+		}
+	}
+	.selectItemsInfoWrapOpen {
+		transition: 0.3s;
+		opacity: 1;
+		transform: scaleY(1);
+	}
+	.table {
+		margin-top: 10px;
+		border: 1px solid $border-color;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+  // 不起作用
+	.ant-table-row-expand-icon-cell {
+		button {
+			:global(&::after) {
+				color: 'red' !important;
+			}
+			:global(&::before) {
+				color: 'red' !important;
+			}
+		}
+	}
+
+	.cardWrap {
+		padding: 10px 18px;
+		background-color: #fff;
+		border-radius: 10px;
+		width: 600px;
+		border: 1px solid $border-color;
+		.row1 {
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: space-between;
+			.title {
+				font-size: 22px;
+				font-weight: 600;
+				margin-right: 14px;
+			}
+			.invoiceId {
+				display: flex;
+				align-items: center;
+				.id {
+					font-weight: 600;
+					font-size: 18px;
+				}
+			}
+		}
+		.row2 {
+			font-size: 17px;
+			margin-bottom: 14px;
+		}
+		.row3 {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 14px;
+			.title {
+				font-size: 22px;
+				font-weight: 600;
+			}
+			.dateWrap,
+			.orderWrap {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.date,
+			.order {
+				font-size: 17px;
+			}
+		}
+	}
+
+	.cardTable {
+		:global(.ant-table-wrapper .ant-table-row-expand-icon-cell .ant-table-row-expand-icon) {
+			color: $blue !important;
+		}
+	}
+}

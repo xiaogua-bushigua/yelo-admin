@@ -1,0 +1,45 @@
+@import '@/assets/styles/global.scss';
+
+.drawerWrap {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  .infoWrap {
+    display: flex;
+    flex-direction: column;
+    .infoDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 14px;
+      .item, .item1 {
+        width: 40%;
+        .title {
+          color: rgb(141, 141, 141);
+          margin-bottom: 6px;
+        }
+        .value {
+          color: $blue;
+          font-size: 16px;
+        }
+        .value1 {
+          font-size: 16px;
+        }
+      }
+      .item1 {
+        width: 60%;
+      }
+    }
+  }
+  .btnsWrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btnIcon {
+      font-size: 20px;
+      height: 40px;
+      padding: 0 4px;
+    }
+  }
+}

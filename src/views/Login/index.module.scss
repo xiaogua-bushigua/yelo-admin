@@ -1,0 +1,121 @@
+@import '@/assets/styles/global.scss';
+
+.back {
+	width: 100%;
+	height: 100%;
+	position: relative;
+  // 动态背景
+	background-color: #e493d0;
+	background-image: radial-gradient(
+			closest-side,
+			#ed6a5a,
+			rgba(235, 105, 78, 0)
+		),
+		radial-gradient(closest-side, #f4f1bb, rgba(243, 11, 164, 0)),
+		radial-gradient(closest-side, #9bc1bc, rgba(254, 234, 131, 0)),
+		radial-gradient(closest-side, #5ca4a9, rgba(170, 142, 245, 0)),
+		radial-gradient(closest-side, #e6ebe0, rgba(248, 192, 147, 0));
+	background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+		110vmax 110vmax, 90vmax 90vmax;
+	background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax,
+		-30vmax -10vmax, 50vmax 50vmax;
+	background-repeat: no-repeat;
+	animation: 2.5s movement linear infinite;
+
+	.backLogo {
+		position: absolute;
+	}
+	.backWrap {
+		position: absolute;
+		width: calc(100% - 100px);
+		height: calc(100% - 80px);
+		top: 40px;
+		left: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+		.backImg {
+			width: 60%;
+			height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .img {
+        background-image: url('@/assets/login_back.png');
+        width: 80%;
+        height: 70%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+		}
+		.backForm {
+			width: 300px;
+			height: 350px;
+      background-color: #fff;
+      margin: auto;
+			border-radius: 15px;
+			box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.3);
+			border-top: 1px solid rgb(199, 199, 199);
+			border-left: 1px solid rgb(199, 199, 199);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			.Icon {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				font-size: 14px;
+				color: rgb(174, 174, 174);
+			}
+			.btn {
+				background-color: $blue;
+				width: 140px;
+				height: 40px;
+				border: none;
+				border-radius: 10px;
+				color: #fff;
+				cursor: pointer;
+				transition: 0.3s;
+				&:hover {
+					background-color: $blue-dark;
+					transition: 0.3s;
+					box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+	}
+}
+
+@keyframes movement {
+	0%,
+	100% {
+		background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+			110vmax 110vmax, 90vmax 90vmax;
+		background-position: -80vmax -80vmax, 60vmax -30vmax, 10vmax 10vmax,
+			-30vmax -10vmax, 50vmax 50vmax;
+	}
+	25% {
+		background-size: 100vmax 100vmax, 90vmax 90vmax, 100vmax 100vmax,
+			90vmax 90vmax, 60vmax 60vmax;
+		background-position: -60vmax -90vmax, 50vmax -40vmax, 0vmax -20vmax,
+			-40vmax -20vmax, 40vmax 60vmax;
+	}
+	50% {
+		background-size: 80vmax 80vmax, 110vmax 110vmax, 80vmax 80vmax,
+			60vmax 60vmax, 80vmax 80vmax;
+		background-position: -50vmax -70vmax, 40vmax -30vmax, 10vmax 0vmax,
+			20vmax 10vmax, 30vmax 70vmax;
+	}
+	75% {
+		background-size: 90vmax 90vmax, 90vmax 90vmax, 100vmax 100vmax,
+			90vmax 90vmax, 70vmax 70vmax;
+		background-position: -50vmax -40vmax, 50vmax -30vmax, 20vmax 0vmax,
+			-10vmax 10vmax, 40vmax 60vmax;
+	}
+}

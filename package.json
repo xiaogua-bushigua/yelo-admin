@@ -1,0 +1,37 @@
+{
+  "name": "yelo-admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 2333",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "antd": "^5.0.4",
+    "axios": "^1.2.1",
+    "dayjs": "^1.11.7",
+    "highcharts-react-official": "^3.1.0",
+    "react": "^18.2.0",
+    "react-avatar": "^5.0.3",
+    "react-dom": "^18.2.0",
+    "react-highlight-words": "^0.18.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.3",
+    "redux": "^4.2.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@types/react-highlight-words": "^0.16.4",
+    "@vitejs/plugin-react": "^2.2.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}

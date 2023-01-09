@@ -1,0 +1,30 @@
+$color: rgba(255, 255, 255, 0.489); 
+$blue-dark: #283594;
+$blue: #4e3cc9;
+$blue-light: #6956e1;
+$green: #86C166;
+$red: #D0104C;
+$prange: #E2943B;
+$gray-font-light: rgb(130, 130, 130);
+$gray-font: rgb(60, 60, 60);
+$gray-font-dark: rgb(26, 26, 26);
+$border-color: gainsboro;
+$border-color-dark: rgb(171, 171, 171);
+
+body {
+	background-color: $color;
+}
+
+img {
+	-webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(211, 211, 211, 0.8);
+  box-shadow: inset 0 0 6px #a49ec6;
+}

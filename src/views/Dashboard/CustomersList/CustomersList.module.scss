@@ -1,0 +1,22 @@
+@import '@/assets/styles/global.scss';
+
+.customersList {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid $border-color;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  .customerWrap {
+    padding: 12px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    .name {
+      margin-left: 20px;
+    }
+    &:hover {
+      background-color: rgb(246, 246, 246);
+      transition: 0.3s;
+    }
+  }
+}

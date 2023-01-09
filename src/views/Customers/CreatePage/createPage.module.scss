@@ -1,0 +1,91 @@
+@import '@/assets/styles/global.scss';
+
+.personalInfoWrap {
+  width: 100%;
+  padding: 0 16px;
+  padding-right: 40%;
+  border-left: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-radius: 10px 10px 0 0;
+  .personalTitle {
+    margin-top: 20px;
+    font-size: 22px;
+    color: rgb(74, 74, 74);
+    font-family: 'Bahnschrift SemiBold';
+  }
+  .personalContent {
+    display: flex;
+    .contentLeft {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+    }
+    .contentRight {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .item {
+      display: inline-block;
+      flex: 1;
+      margin: 16px 16px 0px 0;
+      .inputIcon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        color: rgb(167, 167, 167);
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+.divider {
+  width: 100%;
+  background-color: #FAFAFE;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  height: 30px;
+}
+.btnWrap {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  border-radius: 0 0 10px 10px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  .saveIcon {
+    height: 40px;
+    padding: 4px 10px;
+    font-size: 18px;
+    color: $gray-font-light;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: auto;
+    &:hover {
+      color: $gray-font-light;
+      background-color: rgb(220, 220, 220);
+    }
+  }
+  .saveActived {
+    height: 40px;
+    padding: 4px 10px;
+    font-size: 18px;
+    transition: 0.3;
+    background-color: $blue;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue-dark;
+      color: #fff;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.35);
+    }
+  }
+}

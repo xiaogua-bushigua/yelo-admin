@@ -1,0 +1,38 @@
+@import '@/assets/styles/global.scss';
+
+.reviewsList {
+  padding: 14px 0px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid $border-color;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  .reviewWrap {
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    .right {
+      font-size: 14px;
+      margin-left: 16px;
+      color: $gray-font-light;
+      line-height: 20px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .name {
+        font-size: 14px;
+        margin-top: 8px;
+        color: $gray-font-dark;
+      }
+    }
+    &:hover {
+      background-color: rgb(246, 246, 246);
+      transition: 0.3s;
+    }
+  }
+}

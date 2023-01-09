@@ -1,0 +1,59 @@
+@import '@/assets/styles/global.scss';
+
+.filtersWrap {
+	width: 280px;
+	padding: 10px 10px;
+	border: 1px solid rgb(229, 229, 229);
+	background-color: #fff;
+	margin-right: 10px;
+	border-radius: 10px;
+	.InputWrap {
+		display: flex;
+		justify-content: center;
+	}
+	.filterWrap {
+		margin-top: 20px;
+		.shutDownIcon {
+			border: none;
+			background-color: transparent;
+			color: rgb(136, 136, 136);
+      margin-right: 40px;
+			&:hover {
+				color: rgb(38, 38, 38);
+        background-color: transparent;
+			}
+		}
+		.filterTitleWrap {
+			color: $gray-font-dark;
+			font-size: 18px;
+			margin-left: 4px;
+			margin-bottom: 6px;
+			.filterTitleIcon {
+				font-size: 20px;
+				margin-right: 10px;
+			}
+			.PlusIcon {
+				margin-left: 24px;
+				border: none;
+				background-color: #ececee;
+				color: rgb(136, 136, 136);
+				margin-bottom: 8px;
+				&:hover {
+					color: rgb(38, 38, 38);
+					background-color: rgb(201, 201, 201);
+				}
+			}
+		}
+		.fiterItemsWrap {
+			.filterItem {
+				padding-left: 34px;
+				line-height: 26px;
+				cursor: pointer;
+				color: $gray-font;
+				&:hover {
+					background-color: rgb(233, 233, 233);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+@import '@/assets/styles/global.scss';
+
+.dashboardWrap {
+	width: 100%;
+  margin-bottom: 10px;
+	.dashboardContent {
+    position: relative;
+		width: 100%;
+		display: flex;
+    .card {
+      flex: 1;
+      margin: 0 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .rest {
+      position: absolute;
+      top: 110px;
+      width: calc(50% - 10px);
+      .chart {
+        background: #fff;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+      }
+      .order {
+        margin-top: 10px;
+        background: #fff;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+      }
+    }
+	}
+}
+
+.reviewsList, .customersList {
+  padding: 14px 20px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid $border-color;
+  border-top: none;
+}

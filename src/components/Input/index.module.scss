@@ -1,0 +1,45 @@
+@import '@/assets/styles/global.scss';
+
+.InputWrap {
+	position: relative;
+  display: inline-block;
+  width: 180px;
+	.Input {
+		outline: none;
+		border: none;
+		border-radius: 12px 12px 0 0;
+		background-color: #f2f5ff;
+		border-bottom: 2px solid #686868;
+		padding: 30px 8px 4px 8px;
+    transition: 0.4s;
+    width: 100%;
+    line-height: 20px;
+	}
+	.InputTitle {
+		position: absolute;
+		top: 20px;
+		left: 10px;
+		color: #686868;
+		font-weight: 400;
+    transform: translate(0 ,0);
+    transition: 0.3s;
+    cursor: text;
+	}
+  .TitleFocus {
+    color: $blue;
+    transform: translate(0, -14px);
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  .InputFocus {
+    border-bottom: 2px solid $blue;
+    transition: 0.4s;
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    color: $gray-font-light;
+  }
+}

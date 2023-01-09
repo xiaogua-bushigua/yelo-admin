@@ -1,0 +1,23 @@
+@import '@/assets/styles/global.scss';
+
+.topWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  .optionBtn {
+    height: 40px;
+    margin-right: 14px;
+    background-color: transparent;
+    border: none;
+    color: $blue;
+    font-weight: 600;
+    &:hover {
+      background-color: #e7e7f7;
+    }  
+  }
+}
+
+.contentWrap {
+  display: flex;
+}

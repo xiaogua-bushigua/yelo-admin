@@ -1,0 +1,83 @@
+@import '@/assets/styles/global.scss';
+
+.topWrap {
+  height: 56px;
+	display: flex;
+	.filterItems {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+		.componentWrap {
+			display: flex;
+			align-items: flex-end;
+			margin: 0px 12px;
+      position: relative;
+      height: 54px;
+			.shutDownIcon {
+				border: none;
+				background-color: #ececee;
+				color: rgb(136, 136, 136);
+				margin-bottom: 8px;
+				&:hover {
+					color: rgb(38, 38, 38);
+					background-color: rgb(201, 201, 201);
+				}
+			}
+			.input {
+				display: inline-block;
+				margin: 0 40px;
+				position: absolute;
+        bottom: 0;
+			}
+			.inputIcon {
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				color: rgb(167, 167, 167);
+				transform: translate(0, -50%);
+			}
+		}
+	}
+  .options {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    .optionBtn {
+      height: 40px;
+      margin-right: 14px;
+      margin-top: 10px;
+      background-color: transparent;
+      border: none;
+      color: $blue;
+      font-weight: 600;
+      &:hover {
+        background-color: #e7e7f7;
+      }      
+    }
+    .flterBtnWrap {
+      position: relative;
+      .fiterWrapItems {
+        width: 100%;
+        position: absolute;
+        top: 56px;
+        padding: 10px 0px;
+        background-color: #f5f7fc;
+        border-radius: 8px;
+        box-shadow: 4px 4px 10px rgba($color: #000000, $alpha: 0.35);
+        z-index: 20;
+        .filterSelectItem {
+          padding: 0 20px;
+          height: 30px;
+          line-height: 30px;
+          color: rgb(64, 64, 64);
+          cursor: pointer;
+          &:hover {
+            background-color: #eaeaea;
+          }
+        }
+      }
+    }
+  }
+}

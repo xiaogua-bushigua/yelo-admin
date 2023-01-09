@@ -1,0 +1,85 @@
+@import '@/assets/styles/global.scss';
+
+.personalInfoWrap {
+  padding: 0 16px;
+  .personalTitle {
+    margin-top: 20px;
+    font-size: 22px;
+    color: rgb(74, 74, 74);
+    font-family: 'Bahnschrift SemiBold';
+  }
+  .personalContent {
+    display: flex;
+    .contentLeft {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+    }
+    .contentRight {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .item {
+      display: inline-block;
+      flex: 1;
+      margin: 16px 16px 0px 0;
+      .inputIcon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        color: rgb(167, 167, 167);
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+.btnWrap {
+  margin-top: 30px;
+  height: 60px;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  border-radius: 0 0 10px 10px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .botIcon {
+    height: 30px;
+    padding: 4px 6px;
+  }
+  .deleteIcon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: $red;
+    &:hover {
+      background-color: rgb(238, 194, 194);
+      color: $red;
+    }
+  }
+  .saveIcon {
+    font-size: 18px;
+    color: $gray-font-light;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: auto;
+    &:hover {
+      color: $gray-font-light;
+      background-color: rgb(220, 220, 220);
+    }
+  }
+  .saveActived {
+    transition: 0.3;
+    background-color: $blue;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue-dark;
+      color: #fff;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.35);
+    }
+  }
+}

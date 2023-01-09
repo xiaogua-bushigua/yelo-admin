@@ -1,0 +1,35 @@
+@import '@/assets/styles/global.scss';
+
+.configuration {
+	margin-left: 10px;
+  padding: 20px;
+	.item {
+		padding: 20px 20px;
+		background-color: #fff;
+		width: 100%;
+		border-radius: 10px;
+		margin: 0 0 14px 0;
+		display: flex;
+		align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px rgba($color: #000000, $alpha: 0.35);
+		span {
+			font-size: 18px;
+			color: rgb(66, 66, 66);
+		}
+		.btn {
+			height: 100%;
+      margin-right: 24px;
+			span {
+				font-size: 16px;
+        color: #fff;
+			}
+		}
+    .btn1 {
+      background-color: $blue;
+    }
+    .btn2 {
+      background-color: $blue-dark;
+    }
+	}
+}
