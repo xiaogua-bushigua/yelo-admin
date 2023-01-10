@@ -49,6 +49,9 @@ const sideNavi = () => {
 	const selectedNaviKey = useAppSelector((state) => state.global.selectedNaviKey);
 	const [openKeys, setOpenKeys] = useState(['sales']);
 	const rootSubmenuKeys = ['customers', 'sales'];
+
+  console.log(selectedNaviKey);
+
 	// 展开关闭导航菜单中的父项
 	const onOpenChange: MenuProps['onOpenChange'] = (keys) => {
 		const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);

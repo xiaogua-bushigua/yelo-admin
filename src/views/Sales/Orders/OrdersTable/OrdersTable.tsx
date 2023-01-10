@@ -136,6 +136,7 @@ const OrdersTable = () => {
 		return { ...item, key: item.orderCode };
 	});
 	useEffect(() => {
+    localStorage.setItem('nowMenu', 'ordered')
     setColumns({data: initCol})
 		Object.keys(columnShow).forEach(col=>{      
       if(!columnShow[col as keyof typeof columnShow]) {        

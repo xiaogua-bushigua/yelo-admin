@@ -25,7 +25,9 @@ const OrderList = () => {
 						localStorage.setItem('navigate', 'sales/orders');
 						dispatch(setBread('sales/orders'));
 						dispatch(setSelectedNaviKey('sales/orders'));
-						navigateTo('/sales/orders');
+            const naviItems: HTMLCollection = document.getElementsByClassName('ant-menu-item')
+            const reviewItem = naviItems[1] as HTMLElement
+            reviewItem.click()
 					}}
 				>
 					<div className={cl.left}>

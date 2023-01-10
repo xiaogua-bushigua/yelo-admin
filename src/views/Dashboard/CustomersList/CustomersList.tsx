@@ -9,7 +9,6 @@ import generateColors from '@/utils/generateColors';
 
 const CustomersList = () => {
 	const dispatch = useAppDispatch();
-	const navigateTo = useNavigate();
 	useEffect(() => {
 		dispatch(axiosDashCustomers());
 	}, []);
@@ -25,7 +24,9 @@ const CustomersList = () => {
 							localStorage.setItem('navigate', 'customers');
               dispatch(setBread('customers'))
               dispatch(setSelectedNaviKey('customers'))
-							navigateTo('/customers');
+              const naviItems: HTMLCollection = document.getElementsByClassName('ant-menu-item')
+              const reviewItem = naviItems[3] as HTMLElement
+              reviewItem.click()
 						}}
 					>
 						<Avatar name={names[index]} round size="42" color={color} key={color+'cus'} />

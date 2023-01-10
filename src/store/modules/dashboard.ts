@@ -129,7 +129,6 @@ export const DashboardSlice = createSlice({
 					data: JSON.parse(localStorage.getItem('chartData')!).data,
 				},
 			];
-      console.log(Highcharts.charts[0]);
       Highcharts.charts[0]!.redraw()
 		});
 	},

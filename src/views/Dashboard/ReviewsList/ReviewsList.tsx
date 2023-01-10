@@ -9,7 +9,6 @@ import generateColors from '@/utils/generateColors';
 
 const ReviewsList = () => {
 	const dispatch = useAppDispatch();
-	const navigateTo = useNavigate();
 	const info = useAppSelector((state) => state.dashboard.reviewsContent);
 	useEffect(() => {
 		dispatch(axiosDashReviews());
@@ -25,7 +24,9 @@ const ReviewsList = () => {
 							localStorage.setItem('navigate', 'reviews');
 							dispatch(setBread('reviews'));
 							dispatch(setSelectedNaviKey('reviews'));
-							navigateTo('/reviews');
+              const naviItems: HTMLCollection = document.getElementsByClassName('ant-menu-item')
+              const reviewItem = naviItems[4] as HTMLElement
+              reviewItem.click()
 						}}
 					>
 						<div className={cl.left}>

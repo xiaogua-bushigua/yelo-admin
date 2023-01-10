@@ -32,7 +32,6 @@ const OrdersInfo = () => {
 		? JSON.parse(localStorage.getItem('orderClickedRowInfo')!).data
 		: useAppSelector((state) => state.sales.orderClickedRowInfo);
 	const orderClickedRowPersonalInfo = useAppSelector((state) => state.sales.orderClickedRowPersonalInfo);
-	const nowMenu = useAppSelector((state) => state.sales.nowMenu);
 
 	const columns: ColumnsType<itemsDataType> = [
 		{
@@ -50,7 +49,6 @@ const OrdersInfo = () => {
 			title: 'Quantity',
 			dataIndex: 'quantity',
 			width: 110,
-			render: (text: number) => <span>￥{text}</span>,
 		},
 		{
 			title: 'Total',
@@ -163,7 +161,7 @@ const OrdersInfo = () => {
 								})
 								.filter((i: any) => i.status === localStorage.getItem('nowMenu'))}
 							pagination={false}
-              className={cl.table}
+							className={cl.table}
 						/>
 					</div>
 				</div>

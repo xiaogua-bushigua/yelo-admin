@@ -28,9 +28,7 @@ export const GlobalSlice = createSlice({
 		setBread: (state, action: PayloadAction<string>) => {
 			state.bread = action.payload;
 		},
-		setSelectedNaviKey: (state, action: PayloadAction<string>) => {
-      console.log(action.payload);
-            
+		setSelectedNaviKey: (state, action: PayloadAction<string>) => {            
 			state.selectedNaviKey = action.payload;
 		},
 	},
