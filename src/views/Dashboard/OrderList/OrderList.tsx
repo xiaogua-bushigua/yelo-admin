@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 
 const OrderList = () => {
 	const dispatch = useAppDispatch();
-  const navigateTo = useNavigate();
 	useEffect(() => {
 		dispatch(axiosDashOrders());
 	}, []);

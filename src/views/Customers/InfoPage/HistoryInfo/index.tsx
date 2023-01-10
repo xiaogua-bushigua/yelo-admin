@@ -8,9 +8,9 @@ import cl from './historyInfo.module.scss';
 import { useAppSelector } from '@/store/hooks';
 import { orderType } from '@/types/customer';
 
-function createComparisonFunction(name: string) {
+function compareDate() {
 	return function (object1: any, object2: any) {
-		if (new Date(object1[name]) > new Date(object2[name])) {
+		if (new Date(object1['date']) > new Date(object2['date'])) {
 			return 1;
 		} else {
 			return -1;
@@ -23,7 +23,7 @@ const HistoryInfo = () => {
 		? JSON.parse(localStorage.getItem('customerClickedTableData')!).data
 		: useAppSelector((state) => state.customers.clickedTableData);
 	let reviewAndOrder: Array<orderType> = [...clickedRowData.ordersInfo];
-	reviewAndOrder = reviewAndOrder.sort(createComparisonFunction('date'));
+	reviewAndOrder = reviewAndOrder.sort(compareDate());
 
 	return (
 		<div>

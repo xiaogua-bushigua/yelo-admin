@@ -9,14 +9,18 @@ import { orderSearch, getSearchItem, setColumnShow } from '@/store/modules/sales
 
 const OrdersTop = () => {
 	const dispatch = useAppDispatch();
-  const [columnClass, setColumnClass] = useState(`${cl.colItemsWrap}`)
+    // 表格数据
 	const orderTableData = useAppSelector((state) => state.sales.orderTableData);
+  // 待展示的列选项
 	const columnShow = useAppSelector((state) => state.sales.columnShow);
-  const [flag, setFlag] = useState(false)
+  // columns按钮的类名
+  const [columnClass, setColumnClass] = useState(`${cl.colItemsWrap}`)
+  // 输入框改变时
 	const handleChange = (val: string) => {
 		dispatch(getSearchItem(val));
 		dispatch(orderSearch());
 	};
+  // 导出文件
 	const handleExport = () => {
 		let workbook = utils.book_new();
 		let workSheet1 = utils.json_to_sheet(
@@ -39,6 +43,8 @@ const OrdersTop = () => {
 		utils.book_append_sheet(workbook, workSheet3, 'canceled');
 		writeFileXLSX(workbook, 'ordersData.xlsx');
 	};
+  // columns按钮的点击
+  const [flag, setFlag] = useState(false)
   document.addEventListener('click', () => {
 		if (flag) {setColumnClass(`${cl.colItemsWrap}`); setFlag(!flag)};
 	});
@@ -51,6 +57,7 @@ const OrdersTop = () => {
   const handleColShowWrapClick = (e:any) => {
     e.nativeEvent.stopImmediatePropagation();
   }
+  // switch开关选项的点击
   const handleSwitchChange = (item: string) => {
     dispatch(setColumnShow(item))
   }

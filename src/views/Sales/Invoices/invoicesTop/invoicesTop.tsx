@@ -9,7 +9,6 @@ import { filterData, setFilterItems } from '@/store/modules/sales';
 
 const salesTop = () => {
   const dispatch = useAppDispatch()
-
   // 表格数据
   const showData = useAppSelector(state=>state.sales.invoiceTableData)
   // 处理输出

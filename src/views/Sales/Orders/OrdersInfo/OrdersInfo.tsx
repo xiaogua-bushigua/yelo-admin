@@ -13,25 +13,26 @@ interface itemsDataType {
 	product: string;
 	unitPrice: number;
 	quantity: number;
-	total: number;
+	totalSolo: number;
 	status: string;
 }
 
 const OrdersInfo = () => {
 	const navigateTo = useNavigate();
 	const dispatch = useAppDispatch();
+  // 所点击行的个人的联系信息
+	const orderClickedRowPersonalInfo = useAppSelector((state) => state.sales.orderClickedRowPersonalInfo);
+	const [statusChanges, setStatusChanges] = useState({});
+	const [saveClass, setSaveClass] = useState(`${cl.botIcons} ${cl.saveIcon}`);
+	const [isModalOpen, setIsModalOpen] = useState(false);
+  // 所点击行的行信息
+  const orderClickedRowInfo = localStorage.getItem('orderClickedRowInfo')
+  ? JSON.parse(localStorage.getItem('orderClickedRowInfo')!).data
+  : useAppSelector((state) => state.sales.orderClickedRowInfo);
 
 	useEffect(() => {
 		dispatch(axiosGetPersonalInfo());
 	}, []);
-
-	const [statusChanges, setStatusChanges] = useState({});
-	const [saveClass, setSaveClass] = useState(`${cl.botIcons} ${cl.saveIcon}`);
-	const [isModalOpen, setIsModalOpen] = useState(false);
-	const orderClickedRowInfo = localStorage.getItem('orderClickedRowInfo')
-		? JSON.parse(localStorage.getItem('orderClickedRowInfo')!).data
-		: useAppSelector((state) => state.sales.orderClickedRowInfo);
-	const orderClickedRowPersonalInfo = useAppSelector((state) => state.sales.orderClickedRowPersonalInfo);
 
 	const columns: ColumnsType<itemsDataType> = [
 		{
@@ -52,7 +53,7 @@ const OrdersInfo = () => {
 		},
 		{
 			title: 'Total',
-			dataIndex: 'total',
+			dataIndex: 'totalSolo',
 			width: 110,
 			render: (text: number) => <span>￥{text}</span>,
 		},
@@ -149,7 +150,7 @@ const OrdersInfo = () => {
 						<Table
 							columns={columns}
 							dataSource={orderClickedRowInfo.buyItems
-								.map((item: any, index: any) => {
+								.map((item: itemsDataType, index: number) => {
 									return {
 										product: item.product,
 										unitPrice: item.unitPrice,
@@ -159,7 +160,7 @@ const OrdersInfo = () => {
 										key: index,
 									};
 								})
-								.filter((i: any) => i.status === localStorage.getItem('nowMenu'))}
+								.filter((i: itemsDataType) => i.status === localStorage.getItem('nowMenu'))}
 							pagination={false}
 							className={cl.table}
 						/>

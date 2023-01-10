@@ -3,7 +3,6 @@ import Avatar from 'react-avatar';
 import { axiosDashCustomers } from '@/store/modules/dashboard';
 import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { useNavigate } from 'react-router-dom';
 import { setBread, setSelectedNaviKey } from '@/store/modules/global';
 import generateColors from '@/utils/generateColors';
 

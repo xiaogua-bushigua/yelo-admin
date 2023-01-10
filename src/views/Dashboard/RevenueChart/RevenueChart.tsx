@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import cl from './RevenueChart.module.scss';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { axiosDashRevenue } from '@/store/modules/dashboard';
 import { setWidth } from '@/store/modules/dashboard';

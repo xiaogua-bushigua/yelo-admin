@@ -9,7 +9,7 @@
   margin: 0 0px 0 4px;
 	cursor: pointer;
 	.Select {
-    z-index: 21;
+    z-index: 20;
 		position: absolute;
 		bottom: 0;
 		border: none;
@@ -23,7 +23,7 @@
 		cursor: pointer;
 	}
 	.SelectTitle {
-    z-index: 22;
+    z-index: 30;
 		position: absolute;
 		cursor: pointer;
 		font-size: 18px;
@@ -32,10 +32,9 @@
 		color: #686868;
 		transform: translate(0, 0);
 		transition: 0.3s;
-		z-index: 10;
 	}
 	.selectIcon {
-    z-index: 22;
+    z-index: 20;
 		color: rgb(87, 87, 87) !important;
 		background-color: #f2f5ff !important;
 		border: none;
@@ -45,20 +44,20 @@
 		transform: translate(0, -40%);
 	}
 	.selectIconRotate {
-    z-index: 22;
+    z-index: 20;
 		transform: rotate(180deg);
 		transition: 0.3s;
 		transform-origin: 50% 30%;
 	}
 	.TitleFocus {
-    z-index: 22;
+    z-index: 30;
 		color: $blue;
 		transform: translate(0, -14px);
 		font-size: 12px;
 		transition: 0.3s;
 	}
 	.SelectFocus {
-    z-index: 21;
+    z-index: 20;
 		border-bottom: 2px solid $blue;
 		transition: 0.4s;
 	}
