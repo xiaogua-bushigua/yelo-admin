@@ -5,7 +5,9 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { axiosDashRevenue } from '@/store/modules/dashboard';
 import { setWidth } from '@/store/modules/dashboard';
 
+
 const RevenueChart = (props: HighchartsReact.Props) => {
+
 	const dispatch = useAppDispatch();
   const option = useAppSelector(state=>state.dashboard.options)
 	useEffect(() => {    

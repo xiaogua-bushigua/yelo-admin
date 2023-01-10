@@ -54,6 +54,8 @@ interface salesData {
 		'Total Ex Taxe': boolean;
 		'Delivery Fees': boolean;
 		Taxes: boolean;
+		Date: boolean;
+		Total: boolean;
 	};
 }
 const initialState: salesData = {
@@ -110,12 +112,14 @@ const initialState: salesData = {
 	},
 	searchItem: '',
 	columnShow: {
+    Date: true,
 		Order: true,
 		Customer: true,
 		Address: true,
 		'Total Ex Taxe': true,
 		'Delivery Fees': true,
 		Taxes: true,
+    Total: true
 	},
 };
 
@@ -145,14 +149,14 @@ export const SalesSlice = createSlice({
 		},
     // 设置order页子菜单项
 		setNowMenu: (state, action: PayloadAction<string>) => {
-			state.nowMenu = (localStorage.getItem('nowMenu') ? localStorage.getItem('nowMenu') : action.payload)!;
+			state.nowMenu = action.payload;
 			localStorage.setItem('nowMenu', action.payload);
 		},
     // 设置orders页勾选的行号
 		setOrderSelectRowKeys: (state, action: PayloadAction<React.Key[]>) => {
 			state.selectOrderRowKeys = action.payload;
 		},
-    // invoices页
+    // invoices页批量删除
 		batchInvoiceDel: (state, action: PayloadAction<React.Key[]>) => {
 			action.payload.forEach((key) => {
 				for (let index in state.dataSource.data) {
@@ -201,6 +205,10 @@ export const SalesSlice = createSlice({
 				}
 			}
 		},
+    // 设置点击行的行key
+    setClickedRowKey: (state, action:PayloadAction<string>) => {
+      state.orderClickedRowKey = action.payload
+    },
 		// info页保存
 		saveInfo: (state, action: PayloadAction<{}>) => {
 			for (let item of state.dataSource.data) {
@@ -213,7 +221,7 @@ export const SalesSlice = createSlice({
 			}
 			localStorage.setItem('saleDataSource', JSON.stringify(state.dataSource));
 		},
-		// info页删除
+		// order的info页删除
 		delInfo: (state) => {
 			for (let index in state.dataSource.data) {
 				if (state.dataSource.data[index].orderCode === state.orderClickedRowKey) {
@@ -256,6 +264,7 @@ export const SalesSlice = createSlice({
 		},
     // order页展示的columns
 		setColumnShow: (state, action: PayloadAction<string>) => {
+      console.log(action.payload);
 			Object.keys(state.columnShow).forEach((item) => {
 				if (item === action.payload) {
 					state.columnShow[item as keyof typeof state.columnShow] = !state.columnShow[item as keyof typeof state.columnShow];
@@ -302,7 +311,7 @@ export const SalesSlice = createSlice({
 				});
 			};
 			if (localStorage.getItem('saleOrderShowData')) {
-				state.orderTableData = JSON.parse(localStorage.getItem('saleOrderShowData')!).data;
+				state.orderTableData = JSON.parse(localStorage.getItem('saleOrderShowData')!);
 			} else {
 				getOrderTableData('delivered');
 				getOrderTableData('ordered');
@@ -345,6 +354,7 @@ export const {
 	orderSearch,
 	getSearchItem,
 	setColumnShow,
+  setClickedRowKey
 } = SalesSlice.actions;
 
 export default SalesSlice.reducer;

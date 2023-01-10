@@ -5,7 +5,7 @@ import { DeleteFilled, CloseCircleOutlined } from '@ant-design/icons';
 import cl from './ordersTable.module.scss';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import type { ColumnsType } from 'antd/es/table';
-import { setNowMenu, setOrderSelectRowKeys, batchOrderDel, saveClickedTableRow } from '@/store/modules/sales';
+import { setNowMenu, setOrderSelectRowKeys, batchOrderDel, saveClickedTableRow, setClickedRowKey } from '@/store/modules/sales';
 import { useNavigate } from 'react-router-dom';
 
 const menuItems: MenuProps['items'] = [
@@ -39,68 +39,68 @@ interface colType {
 }
 
 const initCol: ColumnsType<DataType> = [
-  {
-    title: 'Date',
-    dataIndex: 'date',
-    sorter: {
-      compare: (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-      multiple: 1,
-    },
-  },
-  {
-    title: 'Order',
-    dataIndex: 'orderCode',
-    ellipsis: true,
-  },
-  {
-    title: 'Customer',
-    dataIndex: 'customer',
-    width: 100,
-  },
-  {
-    title: 'Address',
-    dataIndex: 'address',
-  },
-  {
-    title: 'Total Ex Taxe',
-    dataIndex: 'totalExPrices',
-    sorter: {
-      compare: (a, b) => a.totalExPrices - b.totalExPrices,
-      multiple: 1,
-    },
-    render: (text: number) => <span>￥{text}</span>,
-    width: 140,
-  },
-  {
-    title: 'Delivery Fees',
-    dataIndex: 'totalDeliveryFees',
-    sorter: {
-      compare: (a, b) => a.totalDeliveryFees - b.totalDeliveryFees,
-      multiple: 1,
-    },
-    render: (text: number) => <span>￥{text}</span>,
-    width: 140,
-  },
-  {
-    title: 'Taxes',
-    dataIndex: 'totalTaxes',
-    width: 90,
-    sorter: {
-      compare: (a, b) => a.totalTaxes - b.totalTaxes,
-      multiple: 1,
-    },
-    render: (text: number) => <span>￥{text}</span>,
-  },
-  {
-    title: 'Total',
-    dataIndex: 'total',
-    width: 90,
-    sorter: {
-      compare: (a, b) => a.totalTaxes + a.totalExPrices + a.totalDeliveryFees - (b.totalTaxes + b.totalExPrices + b.totalDeliveryFees),
-      multiple: 1,
-    },
-    render: (text: number, item) => <span>￥{item.totalTaxes + item.totalExPrices + item.totalDeliveryFees}</span>,
-  },
+	{
+		title: 'Date',
+		dataIndex: 'date',
+		sorter: {
+			compare: (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+			multiple: 1,
+		},
+	},
+	{
+		title: 'Order',
+		dataIndex: 'orderCode',
+		ellipsis: true,
+	},
+	{
+		title: 'Customer',
+		dataIndex: 'customer',
+		width: 100,
+	},
+	{
+		title: 'Address',
+		dataIndex: 'address',
+	},
+	{
+		title: 'Total Ex Taxe',
+		dataIndex: 'totalExPrices',
+		sorter: {
+			compare: (a, b) => a.totalExPrices - b.totalExPrices,
+			multiple: 1,
+		},
+		render: (text: number) => <span>￥{text}</span>,
+		width: 140,
+	},
+	{
+		title: 'Delivery Fees',
+		dataIndex: 'totalDeliveryFees',
+		sorter: {
+			compare: (a, b) => a.totalDeliveryFees - b.totalDeliveryFees,
+			multiple: 1,
+		},
+		render: (text: number) => <span>￥{text}</span>,
+		width: 140,
+	},
+	{
+		title: 'Taxes',
+		dataIndex: 'totalTaxes',
+		width: 90,
+		sorter: {
+			compare: (a, b) => a.totalTaxes - b.totalTaxes,
+			multiple: 1,
+		},
+		render: (text: number) => <span>￥{text}</span>,
+	},
+	{
+		title: 'Total',
+		dataIndex: 'total',
+		width: 90,
+		sorter: {
+			compare: (a, b) => a.totalTaxes + a.totalExPrices + a.totalDeliveryFees - (b.totalTaxes + b.totalExPrices + b.totalDeliveryFees),
+			multiple: 1,
+		},
+		render: (text: number, item) => <span>￥{item.totalTaxes + item.totalExPrices + item.totalDeliveryFees}</span>,
+	},
 ];
 
 const OrdersTable = () => {
@@ -129,24 +129,22 @@ const OrdersTable = () => {
 	const [selectionType] = useState<'checkbox'>('checkbox');
 	const selectRowKeys = useAppSelector((state) => state.sales.selectOrderRowKeys);
 	const [Columns, setColumns] = useState({
-		data: initCol
+		data: initCol,
 	} as colType);
 	// 表格list
 	const list: DataType[] = showData?.data.map((item) => {
 		return { ...item, key: item.orderCode };
 	});
 	useEffect(() => {
-    localStorage.setItem('nowMenu', 'ordered')
-    setColumns({data: initCol})
-		Object.keys(columnShow).forEach(col=>{      
-      if(!columnShow[col as keyof typeof columnShow]) {        
-        for(let item of Columns.data) {
-          if(item.title === col) {  
-            setColumns({data: Columns.data.filter(i=>i.title !== col)})
-          }
-        }
+		localStorage.setItem('nowMenu', 'ordered');
+    // 当columnShow变化时，处理table可显示的列
+    let temp = [] as any
+		Object.keys(columnShow).forEach((col) => {
+			if (columnShow[col as keyof typeof columnShow]) {
+        temp.push(initCol.filter(item=>item.title === col)[0])
       }
-    })
+		});
+    setColumns({ data: temp });
 	}, [columnShow]);
 
 	// 点击顶部导航
@@ -207,6 +205,7 @@ const OrdersTable = () => {
 					return {
 						onClick: () => {
 							dispatch(saveClickedTableRow(record.orderCode));
+              dispatch(setClickedRowKey(record.orderCode))
 							navigateTo('/sales/orders/info');
 						},
 					};

@@ -7,7 +7,8 @@
       "orders": "新增订单",
       "reviews": "待批阅点评",
       "customers": "新增消费用户",
-      "pendingOrder": "待处理订单"
+      "pendingOrder": "待处理订单",
+      "history": "十年间销售历史"
     },
     "header": {
       "title": "欢迎来到yelo管理系统demo",

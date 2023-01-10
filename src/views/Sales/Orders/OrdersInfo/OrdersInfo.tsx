@@ -1,7 +1,7 @@
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { useState, useEffect } from 'react';
 import cl from './OrdersInfo.module.scss';
-import { axiosGetPersonalInfo, saveInfo, delInfo } from '@/store/modules/sales';
+import { axiosGetPersonalInfo, saveInfo, delInfo, setClickedRowKey } from '@/store/modules/sales';
 import Select from '@/components/Select';
 import type { ColumnsType } from 'antd/es/table';
 import { Table, Button, Modal } from 'antd';
@@ -22,6 +22,7 @@ const OrdersInfo = () => {
 	const dispatch = useAppDispatch();
   // 所点击行的个人的联系信息
 	const orderClickedRowPersonalInfo = useAppSelector((state) => state.sales.orderClickedRowPersonalInfo);
+  const clickedRowKey = useAppSelector(state=>state.sales.orderClickedRowKey)
 	const [statusChanges, setStatusChanges] = useState({});
 	const [saveClass, setSaveClass] = useState(`${cl.botIcons} ${cl.saveIcon}`);
 	const [isModalOpen, setIsModalOpen] = useState(false);

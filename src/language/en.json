@@ -7,7 +7,8 @@
       "orders": "New Orders",
       "reviews": "Pending Reviews",
       "customers": "New Customers",
-      "pendingOrder": "Pending Orders"
+      "pendingOrder": "Pending Orders",
+      "history": "10 Year Revenue History"
     },
     "header": {
       "title": "Welcome to the yelo-admin demo",

@@ -3,6 +3,7 @@ import cl from './index.module.scss';
 import { useEffect } from 'react';
 import { useRoutes, useLocation, useNavigate } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
+import { useAppSelector } from './store/hooks';
 
 function ToDashboard() {
 	const navigateTo = useNavigate();
@@ -34,12 +35,14 @@ function BeforeRouterEnter() {
 }
 
 function App() {
+  const theme = useAppSelector(state=>state.global.theme)
+  const primaryColor = useAppSelector(state=>state.global.themeColor[theme as keyof typeof state.global.themeColor].primaryColor)
 	return (
 		<ConfigProvider
 			theme={{
 				token: {
           // ant design组件的样式基色
-					colorPrimary: '#4e3cc9',
+					colorPrimary: primaryColor,
 				},
 			}}
 		>
