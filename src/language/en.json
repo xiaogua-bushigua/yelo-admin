@@ -1,0 +1,27 @@
+{
+  "language": "English",
+  "global": {
+    "title": "Managerial System",
+    "cards": {
+      "revenue": "Yearly Revenue",
+      "orders": "New Orders",
+      "reviews": "Pending Reviews",
+      "customers": "New Customers",
+      "pendingOrder": "Pending Orders"
+    },
+    "header": {
+      "title": "Welcome to the yelo-admin demo",
+      "introduction": "This is the admin of an imaginary goods shop. Feel free to explore and modify the mocked data - it's local to your computer.",
+      "design": "DESIGN PROTOTYPE",
+      "source": "SOURCE FOR THIS DEMO"
+    }
+  },
+  "sideNavi": {
+    "dashboard": "Dashboard",
+    "sales": "Sales",
+    "orders": "Orders",
+    "invoices": "Invoices",
+    "customers": "Customers",
+    "reviews": "Reviews"
+  }
+}

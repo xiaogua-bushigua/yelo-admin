@@ -1,0 +1,27 @@
+{
+  "language": "中文",
+  "global": {
+    "title": "虚拟后台管理系统",
+    "cards": {
+      "revenue": "年收入",
+      "orders": "新增订单",
+      "reviews": "待批阅点评",
+      "customers": "新增消费用户",
+      "pendingOrder": "待处理订单"
+    },
+    "header": {
+      "title": "欢迎来到yelo管理系统demo",
+      "introduction": "这是一个虚拟的商品购物后台管理系统，你可以按需参考本站的业务和代码，接口数据也可以随意使用。",
+      "design": "设计原型",
+      "source": "本站源代码"
+    }
+  },
+  "sideNavi": {
+    "dashboard": "业务看板",
+    "sales": "销售信息",
+    "orders": "订单详情",
+    "invoices": "发票清单",
+    "customers": "消费者总览",
+    "reviews": "商品点评"
+  }
+}

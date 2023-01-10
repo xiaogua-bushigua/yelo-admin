@@ -7,10 +7,13 @@ import { MenuFoldOutlined, MenuUnfoldOutlined, ControlFilled, CloseCircleFilled 
 import { Avatar } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import Highcharts from 'highcharts';
+import '@/language/config';
+import { useTranslation } from "react-i18next";
 
 const topHeader = () => {
 	const dispatch = useAppDispatch();
 	const navigateTo = useNavigate();
+  const { t } = useTranslation();
 	const collapsed = useAppSelector((state) => state.global.collapsed);
 	const bread = useAppSelector((state) => state.global.bread);
   const width = useAppSelector(state=>state.dashboard.width)
@@ -68,7 +71,7 @@ const topHeader = () => {
 				</div>
 			</div>
 
-			<div className={cl.topTitle}>Managerial System</div>
+			<div className={cl.topTitle}>{t("global.title")}</div>
 
 			<div className={cl.user}>
 				<Button className={cl.btn} onClick={handleBtnClick}>

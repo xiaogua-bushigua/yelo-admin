@@ -13,6 +13,8 @@ import cl from './sideNavi.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '@/store/hooks';
 import { setBread } from '@/store/modules/global';
+import '@/language/config';
+import { useTranslation } from "react-i18next";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -32,23 +34,26 @@ function getItem(
 	} as MenuItem;
 }
 
-const items: MenuItem[] = [
-	getItem('Dashboard', 'dashboard', <DashboardOutlined />),
-	getItem('Sales', 'sales', <PropertySafetyOutlined />, [
-		getItem('Orders', 'sales/orders', <DollarCircleFilled />),
-		getItem('Invoices', 'sales/invoices', <HddFilled />),
-	]),
-	getItem('Customers', 'customers', <TeamOutlined />),
-	getItem('Reviews', 'reviews', <BarsOutlined />),
-];
+
 
 const sideNavi = () => {
+  const { t } = useTranslation();
 	const navigateTo = useNavigate();
 	const dispatch = useAppDispatch();
 	const collapsed = useAppSelector((state) => state.global.collapsed);
 	const selectedNaviKey = useAppSelector((state) => state.global.selectedNaviKey);
 	const [openKeys, setOpenKeys] = useState(['sales']);
 	const rootSubmenuKeys = ['customers', 'sales'];
+
+  const items: MenuItem[] = [
+    getItem(t("sideNavi.dashboard"), 'dashboard', <DashboardOutlined />),
+    getItem(t("sideNavi.sales"), 'sales', <PropertySafetyOutlined />, [
+      getItem(t("sideNavi.orders"), 'sales/orders', <DollarCircleFilled />),
+      getItem(t("sideNavi.invoices"), 'sales/invoices', <HddFilled />),
+    ]),
+    getItem(t("sideNavi.customers"), 'customers', <TeamOutlined />),
+    getItem(t("sideNavi.reviews"), 'reviews', <BarsOutlined />),
+  ];
 
 	// 展开关闭导航菜单中的父项
 	const onOpenChange: MenuProps['onOpenChange'] = (keys) => {

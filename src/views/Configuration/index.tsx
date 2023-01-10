@@ -1,15 +1,22 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import cl from './configuration.module.scss';
 import { Button } from 'antd';
 import { setBread } from '@/store/modules/global';
-import { useAppSelector, useAppDispatch } from '@/store/hooks';
+import { useAppDispatch } from '@/store/hooks';
+import { useTranslation } from "react-i18next";
+import { useNavigate } from 'react-router-dom';
 
 const Configuration = () => {
 	const dispatch = useAppDispatch();
-  // !!!! 为什么要放进 useEffect 里
+  const navigateTo = useNavigate()
+  const { i18n } = useTranslation();
 	useEffect(() => {
 		dispatch(setBread('Configuration'));
 	}, []);
+  const handleTranslate = (lang: string)=>{
+    i18n.changeLanguage(lang)
+    navigateTo('/dashboard')
+  }
 
 	return (
 		<div className={cl.configuration}>
@@ -27,10 +34,10 @@ const Configuration = () => {
 			<div className={cl.item}>
 				<span>Language</span>
 				<div>
-					<Button type="primary" className={`${cl.btn} ${cl.btn1}`}>
+					<Button type="primary" className={`${cl.btn} ${cl.btn1}`} onClick={handleTranslate.bind(this, 'en')}>
 						ENGLISH
 					</Button>
-					<Button type="primary" className={`${cl.btn} ${cl.btn2}`}>
+					<Button type="primary" className={`${cl.btn} ${cl.btn2}`} onClick={handleTranslate.bind(this, 'zh')}>
 						简体中文
 					</Button>
 				</div>

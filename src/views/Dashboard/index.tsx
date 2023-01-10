@@ -5,17 +5,21 @@ import CustomersList from './CustomersList/CustomersList';
 import ReviewsList from './ReviewsList/ReviewsList';
 import OrderList from './OrderList/OrderList';
 import RevenueChart from './RevenueChart/RevenueChart';
+import '@/language/config';
+import { useTranslation } from "react-i18next";
 
 const Dashboard = () => {
+  const { t } = useTranslation();
+
 	return (
 		<div className={cl.dashboardWrap}>
 			<Top></Top>
 			<div className={cl.dashboardContent}>
 				<div className={cl.card}>
-					<Card title="Yearly Revenue" content="RMB￥10001"></Card>
+					<Card title={t("global.cards.revenue")} content="RMB￥10001"></Card>
 				</div>
 				<div className={cl.card}>
-					<Card title="New Orders" content="67"></Card>
+					<Card title={t("global.cards.orders")} content="67"></Card>
 				</div>
 
 				<div className={cl.rest}>
@@ -28,11 +32,11 @@ const Dashboard = () => {
 				</div>
 
 				<div className={cl.card}>
-					<Card title="Pending Reviews" content="12" borderBottom={0}></Card>
+					<Card title={t("global.cards.reviews")} content="12" borderBottom={0}></Card>
 					<ReviewsList></ReviewsList>
 				</div>
 				<div className={cl.card}>
-					<Card title="New Customers" content="40" borderBottom={0}></Card>
+					<Card title={t("global.cards.customers")} content="40" borderBottom={0}></Card>
 					<CustomersList></CustomersList>
 				</div>
 			</div>

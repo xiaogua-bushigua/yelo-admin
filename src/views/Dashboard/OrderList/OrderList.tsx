@@ -5,9 +5,11 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import Avatar from 'react-avatar';
 import generateColors from '@/utils/generateColors';
 import { setBread, setSelectedNaviKey } from '@/store/modules/global';
-import { useNavigate } from 'react-router-dom';
+import '@/language/config';
+import { useTranslation } from "react-i18next";
 
 const OrderList = () => {
+  const { t } = useTranslation();
 	const dispatch = useAppDispatch();
 	useEffect(() => {
 		dispatch(axiosDashOrders());
@@ -15,7 +17,7 @@ const OrderList = () => {
 	const info = useAppSelector((state) => state.dashboard.ordersContent);
 	return (
 		<div className={cl.ordersList}>
-			<div className={cl.Title}>Pending Orders</div>
+			<div className={cl.Title}>{t("global.cards.pendingOrder")}</div>
 			{generateColors(info.length).map((color, index) => (
 				<div
 					className={cl.orderWrap}
