@@ -11,6 +11,7 @@ type propsType = {
 	defaultVal?: string;
 	change?: (val: string) => void;
 	borderStyle?: string;
+	input?: string;
 };
 
 const Input = (props: propsType) => {
@@ -27,7 +28,12 @@ const Input = (props: propsType) => {
 			setpClass(`${cl.InputTitle} ${cl.TitleFocus}`);
 			setinputClass(`${cl.Input} ${cl.InputFocus}`);
 		}
-	}, []);
+    if(props.input=='') {
+      setInputVal('');
+			setpClass(`${cl.InputTitle}`);
+			setinputClass(`${cl.Input}`);
+    }
+	}, [props.input]);
 
 	// 聚焦
 	const handleFocus = () => {
@@ -41,7 +47,7 @@ const Input = (props: propsType) => {
 			setinputClass(`${cl.Input}`);
 		}
 	};
-  // 内容改变的回调
+	// 内容改变的回调
 	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
 		setInputVal(event.target.value);
 		props.change!(event.target.value);
@@ -71,12 +77,9 @@ const Input = (props: propsType) => {
 					autoComplete="username"
 					ng-hide="true"
 					style={{
-						paddingTop:
-							props.mode === 'moveTitle' ? '24px' : '12px',
+						paddingTop: props.mode === 'moveTitle' ? '24px' : '12px',
 						paddingRight: props.mode === 'textIcon' ? '32px' : '0',
-						borderBottom: props.borderStyle
-							? props.borderStyle
-							: '',
+						borderBottom: props.borderStyle ? props.borderStyle : '',
 					}}
 					placeholder={props.placeholder}
 				/>

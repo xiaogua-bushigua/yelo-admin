@@ -5,23 +5,8 @@ import { DeleteFilled, CloseCircleOutlined } from '@ant-design/icons';
 import cl from './ordersTable.module.scss';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import type { ColumnsType } from 'antd/es/table';
-import { setNowMenu, setOrderSelectRowKeys, batchOrderDel, saveClickedTableRow, setClickedRowKey } from '@/store/modules/sales';
+import { setNowMenu, setOrderSelectRowKeys, batchOrderDel, saveClickedTableRow, setClickedRowKey, setCurrent } from '@/store/modules/sales';
 import { useNavigate } from 'react-router-dom';
-
-const menuItems: MenuProps['items'] = [
-	{
-		label: 'ORDERED',
-		key: 'ordered',
-	},
-	{
-		label: 'DELIVERED',
-		key: 'delivered',
-	},
-	{
-		label: 'CANCELED',
-		key: 'canceled',
-	},
-];
 
 interface DataType {
 	key?: string;
@@ -106,11 +91,9 @@ const initCol: ColumnsType<DataType> = [
 const OrdersTable = () => {
 	const dispatch = useAppDispatch();
 	const navigateTo = useNavigate();
-	const [current, setCurrent] = useState('ordered');
-	// 选择信息框的类名
-	const [selectWrapClass, setSelectWrapClass] = useState(`${cl.selectItemsInfoWrap}`);
 	// 表格头是否渲染
 	const columnShow = useAppSelector((state) => state.sales.columnShow);
+  const current = useAppSelector(state=>state.sales.current)
 	// 表格数据
 	const showData = useAppSelector((state) => {
 		switch (current) {
@@ -125,31 +108,52 @@ const OrdersTable = () => {
 		}
 	});
 
-	// 勾选模式
-	const [selectionType] = useState<'checkbox'>('checkbox');
+
 	const selectRowKeys = useAppSelector((state) => state.sales.selectOrderRowKeys);
+	const orderTableData = useAppSelector((state) => state.sales.orderTableData);
+
 	const [Columns, setColumns] = useState({
 		data: initCol,
 	} as colType);
+	// 选择信息框的类名
+	const [selectWrapClass, setSelectWrapClass] = useState(`${cl.selectItemsInfoWrap}`);
+	// 勾选模式
+	const [selectionType] = useState<'checkbox'>('checkbox');
+
+	useEffect(() => {
+		localStorage.setItem('nowMenu', 'ordered');
+		// 当columnShow变化时，处理table可显示的列
+		let temp = [] as any;
+		Object.keys(columnShow).forEach((col) => {
+			if (columnShow[col as keyof typeof columnShow]) {
+				temp.push(initCol.filter((item) => item.title === col)[0]);
+			}
+		});
+		setColumns({ data: temp });
+	}, [columnShow]);
+
 	// 表格list
 	const list: DataType[] = showData?.data.map((item) => {
 		return { ...item, key: item.orderCode };
 	});
-	useEffect(() => {
-		localStorage.setItem('nowMenu', 'ordered');
-    // 当columnShow变化时，处理table可显示的列
-    let temp = [] as any
-		Object.keys(columnShow).forEach((col) => {
-			if (columnShow[col as keyof typeof columnShow]) {
-        temp.push(initCol.filter(item=>item.title === col)[0])
-      }
-		});
-    setColumns({ data: temp });
-	}, [columnShow]);
+	const menuItems: MenuProps['items'] = [
+		{
+			label: 'ORDERED  (' + orderTableData.ordered.data.length + ')',
+			key: 'ordered',
+		},
+		{
+			label: 'DELIVERED  (' + orderTableData.delivered.data.length + ')',
+			key: 'delivered',
+		},
+		{
+			label: 'CANCELED  (' + orderTableData.canceled.data.length + ')',
+			key: 'canceled',
+		},
+	];
 
 	// 点击顶部导航
 	const onClickMenu: MenuProps['onClick'] = (e) => {
-		setCurrent(e.key);
+		dispatch(setCurrent(e.key));
 		dispatch(setNowMenu(e.key));
 	};
 	// 关闭选择信息框
@@ -205,7 +209,7 @@ const OrdersTable = () => {
 					return {
 						onClick: () => {
 							dispatch(saveClickedTableRow(record.orderCode));
-              dispatch(setClickedRowKey(record.orderCode))
+							dispatch(setClickedRowKey(record.orderCode));
 							navigateTo('/sales/orders/info');
 						},
 					};

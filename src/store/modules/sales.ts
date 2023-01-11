@@ -10,6 +10,7 @@ interface filterType {
 interface filterItemsType {
 	'Passed since': string;
 	'Passed before': string;
+	random: string;
 }
 const dataSourceInit = {
 	data: [
@@ -57,6 +58,7 @@ interface salesData {
 		Date: boolean;
 		Total: boolean;
 	};
+  current: string
 }
 const initialState: salesData = {
 	dataSource: dataSourceInit,
@@ -93,6 +95,7 @@ const initialState: salesData = {
 	filterItems: {
 		'Passed since': '',
 		'Passed before': '',
+		random: '',
 	},
 	orderClickedRowKey: '',
 	orderClickedRowInfo: {
@@ -112,26 +115,27 @@ const initialState: salesData = {
 	},
 	searchItem: '',
 	columnShow: {
-    Date: true,
+		Date: true,
 		Order: true,
 		Customer: true,
 		Address: true,
 		'Total Ex Taxe': true,
 		'Delivery Fees': true,
 		Taxes: true,
-    Total: true
+		Total: true,
 	},
+  current: 'ordered'
 };
 
 export const SalesSlice = createSlice({
 	name: 'sales',
 	initialState,
 	reducers: {
-    // 设置搜索项
+		// 设置搜索项
 		setFilterItems: (state, action: PayloadAction<filterType>) => {
 			state.filterItems[action.payload.item as keyof typeof state.filterItems] = action.payload.value;
 		},
-    // 进行过滤
+		// 进行过滤
 		filterData: (state) => {
 			state.invoiceTableData = JSON.parse(localStorage.getItem('saleInvoiceShowData')!).data;
 			if (state.filterItems['Passed since'])
@@ -142,21 +146,25 @@ export const SalesSlice = createSlice({
 				state.invoiceTableData = state.invoiceTableData.filter(
 					(item) => new Date(item.date).getTime() < new Date(state.filterItems['Passed before']).getTime()
 				);
+			if (state.filterItems.random)
+				state.invoiceTableData = state.invoiceTableData.filter(
+					(item) => item.customer.includes(state.filterItems.random) || item.address.includes(state.filterItems.random) || item.orderCode.includes(state.filterItems.random)
+				);
 		},
-    // 设置invoices页勾选的行号
+		// 设置invoices页勾选的行号
 		setInvoiceSelectRowKeys: (state, action: PayloadAction<React.Key[]>) => {
 			state.selectInvoiceRowKeys = action.payload;
 		},
-    // 设置order页子菜单项
+		// 设置order页子菜单项
 		setNowMenu: (state, action: PayloadAction<string>) => {
 			state.nowMenu = action.payload;
 			localStorage.setItem('nowMenu', action.payload);
 		},
-    // 设置orders页勾选的行号
+		// 设置orders页勾选的行号
 		setOrderSelectRowKeys: (state, action: PayloadAction<React.Key[]>) => {
 			state.selectOrderRowKeys = action.payload;
 		},
-    // invoices页批量删除
+		// invoices页批量删除
 		batchInvoiceDel: (state, action: PayloadAction<React.Key[]>) => {
 			action.payload.forEach((key) => {
 				for (let index in state.dataSource.data) {
@@ -170,7 +178,7 @@ export const SalesSlice = createSlice({
 			localStorage.setItem('saleDataSource', JSON.stringify(state.dataSource));
 			localStorage.setItem('saleInvoiceShowData', JSON.stringify({ data: state.invoiceTableData }));
 		},
-    // orders页批量删除
+		// orders页批量删除
 		batchOrderDel: (state, action: PayloadAction<React.Key[]>) => {
 			action.payload.forEach((key) => {
 				let index = 0;
@@ -184,7 +192,7 @@ export const SalesSlice = createSlice({
 			});
 			localStorage.setItem('saleOrderShowData', JSON.stringify({ data: state.orderTableData }));
 		},
-    // order页点击的行信息保存
+		// order页点击的行信息保存
 		saveClickedTableRow: (state, action: PayloadAction<string>) => {
 			state.orderClickedRowKey = action.payload;
 			for (let item of state.dataSource.data) {
@@ -205,11 +213,11 @@ export const SalesSlice = createSlice({
 				}
 			}
 		},
-    // 设置点击行的行key
-    setClickedRowKey: (state, action:PayloadAction<string>) => {
-      state.orderClickedRowKey = action.payload
-    },
-		// info页保存
+		// 设置点击行的行key
+		setClickedRowKey: (state, action: PayloadAction<string>) => {
+			state.orderClickedRowKey = action.payload;
+		},
+		// order的info页保存
 		saveInfo: (state, action: PayloadAction<{}>) => {
 			for (let item of state.dataSource.data) {
 				if (item.orderCode === state.orderClickedRowKey) {
@@ -243,15 +251,12 @@ export const SalesSlice = createSlice({
 		getSearchItem: (state, action: PayloadAction<string>) => {
 			state.searchItem = action.payload;
 		},
-    // order页搜索
+		// order页搜索
 		orderSearch: (state) => {
-			state.orderTableData = {
-				ordered: dataSourceInit,
-				delivered: dataSourceInit,
-				canceled: dataSourceInit,
-			};
 			state.orderTableData = JSON.parse(localStorage.getItem('saleOrderShowData')!).data;
 			const filterTable = (item: string) => {
+        console.log(item);
+        
 				state.orderTableData[item as keyof typeof state.orderTableData].data = state.orderTableData[
 					item as keyof typeof state.orderTableData
 				].data.filter(
@@ -262,18 +267,22 @@ export const SalesSlice = createSlice({
 			filterTable('delivered');
 			filterTable('canceled');
 		},
-    // order页展示的columns
+		// order页展示的columns
 		setColumnShow: (state, action: PayloadAction<string>) => {
-      console.log(action.payload);
+			console.log(action.payload);
 			Object.keys(state.columnShow).forEach((item) => {
 				if (item === action.payload) {
 					state.columnShow[item as keyof typeof state.columnShow] = !state.columnShow[item as keyof typeof state.columnShow];
 				}
 			});
 		},
+    // 设置当前显示的order table
+    setCurrent: (state, action: PayloadAction<string>) => {
+      state.current = action.payload
+    }
 	},
 	extraReducers(builder) {
-    // sales页的基本信息
+		// sales页的基本信息
 		builder.addCase(axiosSales.fulfilled, (state, { payload }) => {
 			state.dataSource.data = payload.data;
 			state.dataSource.data.forEach((item, index) => {
@@ -311,7 +320,7 @@ export const SalesSlice = createSlice({
 				});
 			};
 			if (localStorage.getItem('saleOrderShowData')) {
-				state.orderTableData = JSON.parse(localStorage.getItem('saleOrderShowData')!);
+				state.orderTableData = JSON.parse(localStorage.getItem('saleOrderShowData')!).data;
 			} else {
 				getOrderTableData('delivered');
 				getOrderTableData('ordered');
@@ -321,7 +330,7 @@ export const SalesSlice = createSlice({
 			localStorage.setItem('saleDataSource', JSON.stringify(state.dataSource));
 			localStorage.setItem('saleInvoiceShowData', JSON.stringify({ data: state.invoiceTableData }));
 		});
-    // order页个人的联系信息
+		// order页个人的联系信息
 		builder.addCase(axiosGetPersonalInfo.fulfilled, (state, { payload }) => {
 			state.orderClickedRowPersonalInfo = payload.data;
 		});
@@ -354,7 +363,8 @@ export const {
 	orderSearch,
 	getSearchItem,
 	setColumnShow,
-  setClickedRowKey
+	setClickedRowKey,
+  setCurrent
 } = SalesSlice.actions;
 
 export default SalesSlice.reducer;

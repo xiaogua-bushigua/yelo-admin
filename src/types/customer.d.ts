@@ -17,7 +17,7 @@ export interface baseHistoryInfoType {
 	lastSeen: string;
 	ordersNum: number;
 }
-export interface orderType {
+export interface reviewType {
 	reviewId: string;
 	product: string;
 	date: string;
@@ -30,7 +30,7 @@ export interface customerType {
 	customerId: string;
 	personalInfo: personalInfoType;
 	baseHistory: baseHistoryInfoType;
-	ordersInfo: Array<orderType>;
+	ordersInfo: Array<reviewType>;
 }
 export interface tableShowDataType {
 	customer_id: string;

@@ -10,7 +10,8 @@ type propsType = {
 	title: string;
 	defaultDate?: string;
 	width?: string;
-  change?: (val:string) => void
+  change?: (val:string) => void;
+  date?: string;
 };
 
 const Calendar1 = (props: propsType) => {
@@ -28,7 +29,10 @@ const Calendar1 = (props: propsType) => {
 					props.defaultDate.split('-')[1]
 			);
 		}
-	}, []);
+    if(props.date=='') {
+      setDate(' 年 /月 /日')
+    }
+	}, [props.date]);
   // 日历面板的上半部分改变
 	const onPanelChange = (value: Dayjs, mode: CalendarMode) => {    
 		setCalendarCollapsed(false);
