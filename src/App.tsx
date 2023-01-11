@@ -35,8 +35,13 @@ function BeforeRouterEnter() {
 }
 
 function App() {
+  const navigateTo = useNavigate()
   const theme = useAppSelector(state=>state.global.theme)
   const primaryColor = useAppSelector(state=>state.global.themeColor[theme as keyof typeof state.global.themeColor].primaryColor)
+
+  useEffect(()=>{
+    navigateTo('/dashboard')
+  },[])
 	return (
 		<ConfigProvider
 			theme={{

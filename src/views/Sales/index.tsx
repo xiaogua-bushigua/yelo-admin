@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
 import { useEffect } from 'react';
 import { axiosSales } from '@/store/modules/sales';
-import { useDispatch } from 'react-redux';
-import { AppDispatch } from '@/store';
+import { useAppDispatch } from '@/store/hooks';
 
 const Sales = () => {
-  const dispatch = useDispatch<AppDispatch>()
+  const dispatch = useAppDispatch()
+
 	useEffect(() => {
     dispatch(axiosSales())
   }, []);
