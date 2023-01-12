@@ -41,7 +41,7 @@
 
 <img src="D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-1.gif" style="zoom:70%;" />
 
-![](https://raw.githubusercontent.com/xiaogua-bushigua/yelo-admin/main/screenshoots/6-1.gif)
+![](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-1.gif)
 
 - **看板页**
 
