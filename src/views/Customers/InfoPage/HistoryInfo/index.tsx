@@ -84,7 +84,7 @@ const HistoryInfo = () => {
 						<strong>{item.date}</strong>
 					</div>
 					<div className={cl.reviewContent}>
-						<span className={cl.reviewLink}>REVIEW on poster "{item.product}"</span>
+						<span className={cl.reviewLink}>REVIEW on "{item.product}"</span>
 						<div className={cl.reviewStatus}>
 							{new Array(Number(item.rating)).fill('').map((item, index) => (
 								<StarFilled className={cl.reviewStars} key={item.reviewId + '_icon' + index} />
