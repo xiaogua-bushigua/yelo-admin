@@ -5,6 +5,7 @@
 ### 介绍
 
 🛠  Yelo Admin，基于 React18、React-Router v6、React-Hooks、Redux && Redux-Toolkit、TypeScript、Vite2、Ant-Design 5、Highcharts 开源的一套虚拟商城后台管理框架
+
 🔌 作为练习时长半年的前端练习生，本项目旨在自我学习，当然也适合初学 react 的同学进行实战；如果你有好的建议欢迎提出，另外如果能帮助到你且觉得本项目还不错的话，也请不要吝啬你的 star (hhhhh 🧡
 
 🪡 本项目的业务逻辑和 UI 设计风格参考了著名开源项目：[marmelab](https://github.com/marmelab)/**[react-admin](https://github.com/marmelab/react-admin)**，需要的同学也可以移步学习
