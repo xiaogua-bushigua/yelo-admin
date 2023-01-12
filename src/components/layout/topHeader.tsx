@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import Highcharts from 'highcharts';
 import '@/language/config';
 import { useTranslation } from "react-i18next";
+import { setName, setPwd } from '@/store/modules/login';
 
 const topHeader = () => {
 	const dispatch = useAppDispatch();
@@ -42,6 +43,8 @@ const topHeader = () => {
 	const handleLogoutClick = (e: MouseEvent) => {
 		e.nativeEvent.stopImmediatePropagation();
     localStorage.clear()
+    dispatch(setName(''))
+    dispatch(setPwd(''))
 		setUserCollapsed(true);
 		navigateTo('/login');
 	};

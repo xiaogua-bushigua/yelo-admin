@@ -28,7 +28,7 @@ function BeforeRouterEnter() {
 	if (token && location.pathname === '/login') {
 		return <ToDashboard></ToDashboard>;
 	}
-  if (token && location.pathname === '/') {
+	if (token && location.pathname === '/') {
 		return <ToDashboard></ToDashboard>;
 	}
 	if (!token && location.pathname !== '/login') {
@@ -38,13 +38,13 @@ function BeforeRouterEnter() {
 }
 
 function App() {
-  const theme = useAppSelector(state=>state.global.theme)
-  const primaryColor = useAppSelector(state=>state.global.themeColor[theme as keyof typeof state.global.themeColor].primaryColor)
+	const theme = useAppSelector((state) => state.global.theme);
+	const primaryColor = useAppSelector((state) => state.global.themeColor[theme as keyof typeof state.global.themeColor].primaryColor);
 	return (
 		<ConfigProvider
 			theme={{
 				token: {
-          // ant design组件的样式基色
+					// ant design组件的样式基色
 					colorPrimary: primaryColor,
 				},
 			}}
