@@ -39,30 +39,22 @@
 
 - **登录页**
 
-<img src="D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-1.gif" style="zoom:70%;" />
-
-![](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-1.gif)
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-1.gif)
 
 - **看板页**
 
-![](D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-2.gif)
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-2.gif)
 
 - **HighChart**
 
-![](D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-3.gif)
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-3.gif)
 
 - **表单表格**（欢迎在线预览 http://175.24.176.28/
 
-![](D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-4.png)
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-4.png)
 
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-5.png)
 
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-6.png)
 
-![](D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-5.png)
-
-
-
-![](D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-6.png)
-
-
-
-![](D:\frontend_learning\react18\react-projects\yelo-admin\screenshoots\6-7.png)
+![image](https://github.com/xiaogua-bushigua/yelo-admin/blob/main/screenshoots/6-7.png)
